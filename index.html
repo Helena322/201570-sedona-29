@@ -29,12 +29,12 @@
 	
 	<main class="container">
 		<section class="features">
-			<div class="rectangle">
+			<div class="rectangle-first">
 				<h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
 				<p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
 			</div>
-			<article class="rectangle">
-				<div class="caption">
+			<article class="rectangle index-columns">
+				<div class="caption-post">
 					<h3>Настоящий городок</h3>
 					<p>— №1 —</p>
 					<p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
@@ -59,11 +59,11 @@
 					</li>
 				</ul>
 			</article>
-			<article class="rectangle">
+			<article class="rectangle index-columns">
 				<div class="caption image">
 					<img src="" alt="image">
 				</div>
-				<div class="caption">
+				<div class="caption-post">
 					<h3>Там есть Мост дьявола</h3>
 					<p>— №2 —</p>
 					<p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
@@ -96,8 +96,22 @@
 			</div>
 			<article class="modal modal-map"><a href="#">Карта</a></article>
 			<article class="search">
-  				<h2>поиск гостиницы в седоне</h2>
- 				<button class="button" type="button">Найти</button>
+				<h2>поиск гостиницы в седоне</h2>
+  				<div class="layer">
+  					<form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+ 					<p class="appointment-item">
+          				<label>Дата заезда: <input type="date" name="arrival" placeholder="24.04.2017"></label>
+        			</p>
+        			<p class="appointment-item">
+          				<label>Дата выезда: <input type="date" name="leaving" placeholder="04.07.2017"></label>
+        			</p>
+        			<p class="appointment-item">
+          				<label>Взрослые: <input type="number" min="0" max="6" name="adult" placeholder="2"></label>
+          				<label>Дети: <input type="number" min="0" max="6" name="children" placeholder="0"></label>
+        			</p>
+ 					<button class="button" type="button">Найти</button>
+ 					</form>
+ 				</div>
 			</article>
 		</section>
 	</main>
@@ -108,21 +122,22 @@
   			<p>ТЕЛ: <a class="footer-phone" href="tel:+74956660166">+7(495) 666-01-66</p>
   		</div>
   		<div class="footer-social">
-  			<ul>
-				<li>
+  			<ul class="features-list">
+				<li class="feature-item">
 					<a class="social-button" href="#">Твиттер</a>
 				</li>
-				<li>
+				<li class="feature-item">
 					<a class="social-button" href="#">Фейсбук</a>
 				</li>
-				<li>
+				<li class="feature-item">
 					<a class="social-button" href="#">Ютуб</a>
 				</li>
 			</ul>
   		</div>
   		<p class="footer-copyright">
+  			<p>Website by</p>
 			Разработано:
-  			<a class="button" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
+  			<a class="button-copyright" href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a>
  	 	</p>
 	</footer>
 

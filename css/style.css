@@ -1,50 +1,207 @@
 
 
 :root {
-  --basic-black: #000000;
-  --basic-white: #ffffff;
+	--basic-black: #000000;
+	--basic-white: #ffffff;
 
-  --basic-blue: #81B3D2;
-  --basic-extra-dark: #333333;
-  --basic-dark-gray: #A9A9A9;
-  --basic-light-gray: #F2F2F2;
-  --basic-dark-blue: #23A9E1;
-  --basic-blue2: #81B3D3;
-  --basic-dark: #231F20;
-  --basic-dark-red: #491213;
-  --basic-dark-brown: #766357;
-  --basic-brown: #766458;
-  --basic-red: #DC6243;
-  --basic-gray: #EEEEEE;
-  --basic-orange: #F49774;
-  --basic-pink: #F4B1A4;
-  
-  --logo-html: #231F20;
+	--basic-blue: #81B3D2;
+	--basic-extra-dark: #333333;
+	--basic-dark-gray: #A9A9A9;
+	--basic-light-gray: #F2F2F2;
+	--basic-dark-blue: #23A9E1;
+	--basic-blue2: #81B3D3;
+	--basic-dark: #231F20;
+	--basic-dark-red: #491213;
+	--basic-dark-brown: #766357;
+	--basic-brown: #766458;
+	--basic-red: #DC6243;
+	--basic-gray: #EEEEEE;
+	--basic-orange: #F49774;
+	--basic-pink: #F4B1A4;
+
+	--background-footer-color: rgba(255, 255, 255, 0.9);
+	--button-hover: #669EC0;
+	--button-active: #5496BD;
+	--logo-press: #BDBBBC;
+	--search-hover: #604E43;
+	--search-active: #503E33;
 }
 
 
+/* Global */
 
 body {
-  min-width: 960px;
-  margin: 0;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 700;
-  color: var(--basic-black);
-  text-transform: uppercase;
-  background-color: var(--basic-white);
-  background-image: url("");
-  background-position: top center;
-  background-repeat: no-repeat;
+	min-width: 960px;
+	margin: 0;
+	padding: 0;
+	font-family: "PT Sans", Arial, sans-serif;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: bold;
+	color: var(--basic-black);
+	text-transform: uppercase;
+	background-color: var(--basic-white);
+	background-position: top center;
+	background-repeat: no-repeat;
 }
 
-a {
-  text-decoration: none;
+.page a {
+	text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
+}
+
+/* Main navigation */
+
+.top-logo {
+	background: url(Image.png);
+}
+
+.main-navigation {
+	font-size: 14px;
+	line-height: 26px;
+	color: var(--basic-white);
+	background-color: var(--basic-white);
+}
+
+.site-navigation {
+	list-style: none;
+}
+
+.site-navigation a {
+	color: var(--basic-black);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+	background-color: var(--basic-white);
+}
+
+/* Features */
+
+.rectangle-first {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.rectangle-first p {
+	font-size: 14px;
+	line-height: 26px;
+}
+
+.features-list {
+	list-style: none;
+}
+
+.feature-item {
+	text-align: center;
+}
+
+.feature-item h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+/* Caption-post */
+
+.caption-post{
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.caption-post h3 {
+	font-size: 21px;
+	line-height: 21px;
+}
+
+/* search */
+
+.search {
+	font-size: 21px;
+	line-height: 26px;
+	width: 568px;
+	background-color: var(--basic-dark-brown);
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.search h2:hover  {
+	background-color: var(--search-hover);
+}
+
+.search h2:active {
+	opacity: 0.3;
+	background-color: var(--search-active);
+}
+
+.layer {
+	background-color: var(--basic-white);
+}
+
+.button {
+	font: inherit;
+	text-align: center;
+	color: var(--basic-white);
+	vertical-align: middle;
+	text-transform: uppercase;
+	background-color: var(--basic-blue);
+	border: none;
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.button:hover  {
+	background-color: var(--button-hover);
+}
+
+.button:active {
+	opacity: 0.3;
+	background-color: var(--button-active);
+}
+
+/* footer */
+
+.page-footer {
+	background-color: var(--background-footer-color);
+	height: 120px;
+}
+
+
+/* footer-phone */
+
+.footer-phone,
+.footer-phone:hover,
+.footer-phone:hover {
+	color: var(--basic-black);
+}
+
+/* footer-social */
+
+.social-button {
+	background-color: var(--basic-blue);
+}
+
+.social-button:hover {
+	background-color: var(--button-hover);
+}
+
+.social-button:active {
+	opacity: 0.3;
+	background-color: var(--button-active);
+}
+
+/* footer-copyright */
+
+.button-copyright:hover {
+	background-color: var(--basic-blue);
+}
+
+.button-copyright:active {
+	background-color: var(--logo-press);
 }
