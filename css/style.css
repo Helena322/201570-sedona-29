@@ -1,5 +1,4 @@
 
-
 :root {
 	--basic-black: #000000;
 	--basic-white: #ffffff;
@@ -82,6 +81,10 @@ img {
 
 /* Features */
 
+.features {
+	text-align: center;
+}
+
 .rectangle-first {
 	font-size: 21px;
 	line-height: 26px;
@@ -119,12 +122,17 @@ img {
 	line-height: 21px;
 }
 
+/* Caption */
+
+.caption {
+	text-align: center;
+}
+
 /* search */
 
 .search {
 	font-size: 21px;
 	line-height: 26px;
-	width: 568px;
 	background-color: var(--basic-dark-brown);
 	text-align: center;
 	margin-left: auto;
@@ -142,13 +150,15 @@ img {
 
 .layer {
 	background-color: var(--basic-white);
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 .button {
 	font: inherit;
 	text-align: center;
 	color: var(--basic-white);
-	vertical-align: middle;
 	text-transform: uppercase;
 	background-color: var(--basic-blue);
 	border: none;
@@ -158,11 +168,13 @@ img {
 
 .button:hover  {
 	background-color: var(--button-hover);
+	border: none;
 }
 
 .button:active {
 	opacity: 0.3;
 	background-color: var(--button-active);
+	border: none;
 }
 
 /* footer */
