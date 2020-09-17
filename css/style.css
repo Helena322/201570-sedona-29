@@ -135,8 +135,6 @@ img {
 	line-height: 26px;
 	background-color: var(--basic-dark-brown);
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .search h2:hover  {
@@ -150,9 +148,6 @@ img {
 
 .layer {
 	background-color: var(--basic-white);
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
 }
 
 .button {
@@ -168,13 +163,13 @@ img {
 
 .button:hover  {
 	background-color: var(--button-hover);
-	border: none;
+
 }
 
 .button:active {
 	opacity: 0.3;
 	background-color: var(--button-active);
-	border: none;
+	
 }
 
 /* footer */
