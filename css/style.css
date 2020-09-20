@@ -74,11 +74,18 @@ img {
 
 .site-navigation a {
 	color: var(--basic-black);
+	background-color: var(--basic-white);
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation a:hover {
+	color: var(--basic-blue);
 	background-color: var(--basic-white);
+}
+
+.site-navigation a:focus {
+	color: var(--basic-black);
+	background-color: var(--basic-white);
+	opacity: 0.3;
 }
 
 /* Features */
@@ -184,6 +191,18 @@ img {
 }
 
 /* search-results */
+
+.hotel a {
+	color: var(--basic-dark);
+}
+
+.hotel a:hover {
+	color: var(--basic-blue);
+}
+
+.hotel a:active {
+	color: rgba(0, 0, 0, 0.3);
+}
 
 .search-results-list {
 	list-style: none;
