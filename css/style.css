@@ -24,6 +24,8 @@
 	--logo-press: #BDBBBC;
 	--search-hover: #604E43;
 	--search-active: #503E33;
+	--rating: #666666;
+	--checkbox-active: #6A6A6A;
 }
 
 
@@ -115,6 +117,129 @@ img {
 	line-height: 21px;
 	color: var(--basic-extra-dark);
 	font-weight: normal;
+}
+
+/*filter-selection*/
+
+.filter {
+	list-style: none;
+	color: var(--basic-white);
+}
+
+.filter-selection h2 {
+	font-size: 16px;
+	line-height: 21px;
+}
+
+.filter-selection p,
+.filter-selection span,
+.filter-selection-item {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+
+/* filter checkbox */
+
+.filter-input-checkbox:hover {
+	background-color: var(--basic-white);
+}
+
+.filter-input-checkbox:active {
+	background-color: var(--checkbox-active);
+}
+
+/* sort */
+
+.sort-type {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.sort-type p {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.sort-list-item {
+	list-style: none;
+}
+
+.sort-type-item {
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
+	opacity: 0.3;
+	color: var(--basic-black);
+}
+
+.sort-type-item:hover {
+	color: var(--basic-blue);
+}
+
+.sort-type-item:active {
+	color: var(--basic-black);
+	opacity: 1;
+}
+
+/* search-results */
+
+.search-results-list {
+	list-style: none;
+}
+
+.search-results-item h2 {
+	font-size: 21px;
+	line-height: 26px;
+}
+
+.search-results-item p,
+.search-results-item span {
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+}
+
+.rating p {
+	color: var(--rating);
+	background-color: var(--basic-light-gray);
+}
+
+.search-results-button-detail {
+	color: var(--basic-white);
+	background-color: var(--basic-blue);
+	border: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.search-results-button-stay {
+	color: var(--basic-white);
+	background-color: var(--basic-dark-brown);
+	border: none;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 21px;
+}
+
+.search-results-button-detail:hover {
+	background-color: var(--button-hover);
+}
+
+.search-results-button-detail:active {
+	background-color: var(--button-active);
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.search-results-button-stay:hover {
+	background-color: var(--search-hover);
+}
+
+.search-results-button-stay:active {
+	background-color: var(--search-active);
+	color: rgba(255, 255, 255, 0.3);
 }
 
 /* rectangle-third */
