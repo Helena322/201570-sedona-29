@@ -74,17 +74,14 @@ img {
 
 .site-navigation a {
 	color: var(--basic-black);
-	background-color: var(--basic-white);
 }
 
 .site-navigation a:hover {
 	color: var(--basic-blue);
-	background-color: var(--basic-white);
 }
 
 .site-navigation a:focus {
 	color: var(--basic-black);
-	background-color: var(--basic-white);
 	opacity: 0.3;
 }
 
@@ -100,6 +97,21 @@ img {
   display: inline-block;
   margin: 0 10px;
 }
+
+/* top-logo 
+
+.top-logo {
+	background-image: url("img/background_photo.png");
+}
+
+.welcome {
+	background-image: url("img/welcome.svg");
+}
+
+.filter {
+	background-image: url("img/background.png");
+}
+*/
 
 /* Features */
 
@@ -245,6 +257,7 @@ img {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 21px;
+	text-transform: uppercase;
 }
 
 .search-results-button-stay {
@@ -254,6 +267,7 @@ img {
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 21px;
+	text-transform: uppercase;
 }
 
 .search-results-button-detail:hover {
@@ -335,10 +349,6 @@ img {
 	line-height: 26px;
 	background-color: var(--basic-dark-brown);
 	text-align: center;
-}
-
-.search h2:hover  {
-	background-color: var(--search-hover);
 }
 
 .search h2:active {
