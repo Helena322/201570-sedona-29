@@ -88,6 +88,19 @@ img {
 	opacity: 0.3;
 }
 
+.current-page a {
+	color: var(--basic-dark-brown);
+}
+
+.site-navigation,
+.site-navigation-item,
+.filter-selection,
+.feature-item-social,
+.page-footer div {
+  display: inline-block;
+  margin: 0 10px;
+}
+
 /* Features */
 
 .features {
@@ -148,11 +161,11 @@ img {
 
 /* filter checkbox */
 
-.filter-input-checkbox:hover {
+.filter-input-checkbox:hover + label {
 	background-color: var(--basic-white);
 }
 
-.filter-input-checkbox:active {
+.filter-input-checkbox:active + label {
 	background-color: var(--checkbox-active);
 }
 
@@ -378,6 +391,10 @@ img {
 }
 
 /* footer-social */
+
+.features-list-social {
+	list-style: none;
+}
 
 .social-button {
 	background-color: var(--basic-blue);
