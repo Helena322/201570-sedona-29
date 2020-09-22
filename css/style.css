@@ -93,7 +93,8 @@ img {
 .site-navigation-item,
 .filter-selection,
 .feature-item-social,
-.page-footer div {
+.page-footer div,
+.footer-copyright p {
   display: inline-block;
   margin: 0 10px;
 }
@@ -198,7 +199,7 @@ img {
 	list-style: none;
 }
 
-.sort-type-item {
+.sort-type-item a {
 	font-weight: normal;
 	font-size: 12px;
 	line-height: 18px;
@@ -206,11 +207,11 @@ img {
 	color: var(--basic-black);
 }
 
-.sort-type-item:hover {
+.sort-type-item a:hover {
 	color: var(--basic-blue);
 }
 
-.sort-type-item:active {
+.sort-type-item a:active {
 	color: var(--basic-black);
 	opacity: 1;
 }
@@ -428,9 +429,9 @@ img {
 }
 
 .button-copyright:hover {
-	background-color: var(--basic-blue);
+	color: var(--basic-blue);
 }
 
 .button-copyright:active {
-	background-color: var(--logo-press);
+	color: var(--logo-press);
 }
