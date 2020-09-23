@@ -46,6 +46,17 @@ body {
 	background-repeat: no-repeat;
 }
 
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+.page {
+  height: 100%;
+}
+
 .page a {
 	text-decoration: none;
 }
@@ -61,15 +72,33 @@ img {
 	background: url(Image.png);
 }
 
+.main-header {
+	display: grid;
+	justify-self: center;
+}
+
+.main-header img {
+	display: grid;
+	justify-self: center;
+}
+
+.main-header-bar {
+	background-color: var(--basic-white);
+	width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
 .main-navigation {
 	font-size: 14px;
 	line-height: 26px;
-	color: var(--basic-white);
-	background-color: var(--basic-white);
 }
 
 .site-navigation {
+	display: grid;
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .site-navigation a {
@@ -89,6 +118,8 @@ img {
 	color: var(--basic-dark-brown);
 }
 
+/*
+
 .site-navigation,
 .site-navigation-item,
 .filter-selection,
@@ -98,6 +129,8 @@ img {
   display: inline-block;
   margin: 0 10px;
 }
+
+*/
 
 /* top-logo 
 
@@ -118,6 +151,25 @@ img {
 
 .features {
 	text-align: center;
+	outline: 5px solid rgba(255, 0, 0 , 0.3);
+}
+
+.index-columns-first {
+	display: grid;
+	grid-template-columns: 1fr auto;
+	grid-template-rows: 256px;
+}
+
+.index-columns-second {
+	display: grid;
+	grid-template-columns: auto 1fr;
+	grid-template-rows: 256px;
+}
+
+.features-list {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	column-gap: 20px;
 }
 
 .rectangle-first h3{
@@ -133,6 +185,8 @@ img {
 
 .features-list {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .feature-item {
@@ -143,6 +197,7 @@ img {
 	font-size: 21px;
 	line-height: 21px;
 	color: var(--basic-black);
+	outline: 5px solid rgba(0, 255, 255 , 0.3);
 }
 
 .feature-item p {
@@ -150,6 +205,8 @@ img {
 	line-height: 21px;
 	color: var(--basic-extra-dark);
 	font-weight: normal;
+	padding: 10px 10px;
+	margin: 10px 10px;
 }
 
 /*filter-selection*/
@@ -389,6 +446,25 @@ img {
 	height: 120px;
 }
 
+.page-footer .container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+}
+
+.footer-contacts {
+	margin: 0;
+	width: 200px;	
+}
+
+.footer-social {
+	width: 400px;
+	justify-self: center;
+}
+
+.footer-copyright {
+	margin: 0;
+	width: 327px;
+}
 
 /* footer-phone */
 
