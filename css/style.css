@@ -162,13 +162,11 @@ img {
 .index-columns-first {
 	display: grid;
 	grid-template-columns: 1fr auto;
-	grid-template-rows: 256px;
 }
 
 .index-columns-second {
 	display: grid;
 	grid-template-columns: auto 400px;;
-	grid-template-rows: 256px;
 }
 
 .features-list {
@@ -194,7 +192,6 @@ img {
 
 .rectangle-second {
 	display: grid;
-	grid-template-rows: 256px;
 }
 
 .features-list {
@@ -364,7 +361,6 @@ img {
 
 .rectangle-third {
 	display: grid;
-	grid-template-rows: 256px;
 	background-color: var(--basic-gray);
 }
 
