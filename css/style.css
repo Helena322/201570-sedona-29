@@ -90,8 +90,10 @@ img {
 }
 
 .main-navigation {
-	display: grid;
-	grid-template-columns: auto 1fr auto;
+	display: flex;
+	align-items: center;
+	/*display: grid;
+	grid-template-columns: auto 1fr auto;*/
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -125,6 +127,17 @@ img {
 	margin: 0 auto;
 }
 
+/*.city-of-seedona {
+	position: relative;
+	z-index: 200;
+}
+
+.welcome {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -215px;
+}*/
 
 .filter-selection,
 .feature-item-social,
@@ -181,6 +194,7 @@ nav img {
 
 .features {
 	text-align: center;
+	margin-bottom: 0;
 }
 
 .index-columns-first {
@@ -190,13 +204,18 @@ nav img {
 
 .index-columns-second {
 	display: grid;
-	grid-template-columns: auto 400px;;
+	grid-template-columns: auto 1fr;
 }
 
 .features-list {
-	display: grid;
+	/*display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
-	column-gap: 20px;
+	column-gap: 20px;*/
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .rectangle-first h3{
@@ -210,18 +229,17 @@ nav img {
 	font-weight: normal;
 }
 
+.caption-image {
+	display: flex;
+}
+
 .rectangle-second {
 	display: grid;
 }
 
-.features-list {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
 .feature-item {
 	text-align: center;
+	width: 300px;
 	padding: 50px;
 }
 
@@ -229,6 +247,8 @@ nav img {
 	font-size: 21px;
 	line-height: 21px;
 	color: var(--basic-black);
+	margin: 0;
+	margin-bottom: 25px;
 }
 
 .feature-item p {
@@ -236,8 +256,8 @@ nav img {
 	line-height: 21px;
 	color: var(--basic-extra-dark);
 	font-weight: normal;
-	padding: 10px 10px;
-	margin: 10px 10px;
+	padding: 10px;
+	margin: 0 10px;
 }
 
 /*filter-selection*/
@@ -437,28 +457,40 @@ nav img {
 
 /* Caption-post */
 
-.caption-post{
+.caption-post {
+	display: flex;
+	height: 256px;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
-	padding: 40px;
 }
 
 .caption-post h3 {
 	font-size: 21px;
 	line-height: 21px;
+	margin: 0;
+	margin-bottom: 25px;
 }
 
 .caption-post p {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
+	margin: 0 10px;
 }
 
-/* Caption */
+/* interest, Caption */
+
+.interest {
+	display: grid;
+}
 
 .caption {
 	text-align: center;
 	max-width: 568px;
+	height: 291px;
 	justify-self: center;
 	margin: 0 auto;
 }
@@ -477,27 +509,64 @@ nav img {
 /* search */
 
 .search {
-	display: grid;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	font-size: 21px;
 	line-height: 26px;
-	background-color: var(--basic-dark-brown);
 	text-align: center;
-	max-width: 568px;
-	max-height: 395px;
-	justify-self: center;
 	margin: 0 auto;
 }
 
-.search h2:active {
+.search-heading {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 568px;
+	height: 86px;
+	color: var(--basic-white);
+	background-color: var(--basic-dark-brown);
+}
+
+.search-heading:hover {
+	background-color: var(--search-hover);
+	color: var(--basic-white);
+}
+
+.search-heading:active {
 	background-color: var(--search-active);
 	color: rgba(255, 255, 255, 0.3);
 }
 
 .layer {
+	display: flex;
+	width: 568px;
+	height: 395px;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+	justify-content: center;
 	background-color: var(--basic-white);
 }
 
+.appointment-form {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.appointment-item-people {
+	display: flex;
+	justify-content: space-around;
+}
+
 .button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 458px;
+	height: 58px;
 	font: inherit;
 	text-align: center;
 	color: var(--basic-white);
@@ -548,14 +617,21 @@ nav img {
 }
 
 .footer-contacts {
+	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 	min-width: 250px;
+	margin: 0;
 }
 
 .footer-contacts p {
 	color: var(--basic-black);
 	font-size: 21px;
 	line-height: 26px;
+	margin: 0;
+	margin-bottom: 10px;
+	margin-top: 10px;
 }
 
 .footer-social {
@@ -704,10 +780,7 @@ nav img {
 }
 
 .star {
-	display: grid;
-	grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-	grid-template-rows: 1fr;
-	/*display: flex;
+	display: flex;
 	flex-direction: row;
-	justify-self: end;*/
+	justify-self: end;
 }
