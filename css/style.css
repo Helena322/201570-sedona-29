@@ -219,12 +219,6 @@ nav img {
 	padding: 0;
 }
 
-.rectangle-first {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
-}
-
 .rectangle-first h3{
 	font-size: 21px;
 	line-height: 26px;
@@ -486,8 +480,6 @@ nav img {
 /* interest, Caption */
 
 .caption {
-	display: flex;
-	flex-direction: column;
 	text-align: center;
 	max-width: 568px;
 	min-height: 291px;
