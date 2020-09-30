@@ -544,9 +544,7 @@ nav img {
 	width: 568px;
 	height: 395px;
 	flex-direction: column;
-	justify-content: space-between;
 	align-items: center;
-	justify-content: center;
 	background-color: var(--basic-white);
 }
 
@@ -554,11 +552,16 @@ nav img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	margin: 0;
+	margin-top: 10px;
 }
 
 .appointment-item-people {
 	display: flex;
 	justify-content: space-around;
+	margin: 0;
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .button {
