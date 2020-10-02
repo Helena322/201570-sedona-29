@@ -42,7 +42,7 @@
               <label><input class="filter-input-checkbox" type="checkbox" name="wi-fi"> wi-fi</label>
             </li>
           </ul>
-          <ul class="filter-selection">
+          <ul class="filter-selection filter-selection-second">
             <h2>Тип жилья:</h2>
             <li class="filter-selection-item">
               <label><input class="filter-input-checkbox" type="checkbox" name="hotel" checked> отель</label>
@@ -56,14 +56,16 @@
           </ul>
           <div class="filter-selection filter-selection-show">
             <h2>Стоимость в сутки (Р):</h2>
-            <p>от 0 <span>до 3000</span></p>
+            <div class="selection">
+              <p>от 0</p><p>до 3000</p>
+            </div>
             <input type="range" min="500" max="3000" step="500"><br>
-            <button class="filter-show" type="button">Показать</button>
+            <button class="filter-show" type="button">показать</button>
          </div>
         </form>
       </section>
 
-      <section>
+      <section class="sorting-search">
         <div class="sort">
           <h2>Найдено: 3</h2>
           <div class="sort-type">
@@ -81,8 +83,8 @@
         </div>
         <article class="search-results">
             <ul class="search-results-list">
-              <li class="search-results-item">
-                <p>
+              <li class="search-results-item search-results-item-first">
+                <p class="search-image">
                   <img src="img/item-first.png" width="135" height="90" alt="Amara Resort & Spa">
                 </p>
                 <div class="hotel">
@@ -103,15 +105,15 @@
                     <p>Рейтинг: 8,5</p>
                   </div>
               </li>
-              <li class="search-results-item">
-                <p>
+              <li class="search-results-item search-results-item-second">
+                <p class="search-image">
                   <img src="img/item-second.png" width="135" height="90" alt="Desert Quail Inn">
                 </p>
                 <div class="hotel">
                   <h2><a href="#">Desert Quail Inn</a></h2>
                   <p>Мотель <span>от 3000 Р.</span></p>
                     <div class="reservation">
-                      <button type="butяton" class="search-results-button-detail">Подробнее</button>
+                      <button type="button" class="search-results-button-detail">Подробнее</button>
                       <button type="button" class="search-results-button-stay">Забронировать</button>
                     </div>
                 </div>
@@ -124,8 +126,8 @@
                 <p>Рейтинг: 8,9</p>
                 </div>
               </li>
-              <li class="search-results-item">
-                <p>
+              <li class="search-results-item search-results-item-third">
+                <p class="search-image">
                   <img src="img/item-third.png" width="135" height="90" alt="Villas at Poco Diablo">
                 </p>
                 <div class="hotel">
