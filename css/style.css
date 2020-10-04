@@ -795,8 +795,6 @@ nav img {
 	margin: 0;
 	padding: 0;
 	padding-bottom: 20px;
-	outline: 5px solid rgba(0, 255, 255, 0.3);
-  	outline-offset: -5px;
 }
 
 .filter-selection-show {
