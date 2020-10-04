@@ -10,50 +10,57 @@
 
   <body class="page-body inner-page">
   
-    <main class="main-container">
-      <header class="main-header">
-        <nav class="main-navigation">
-          <ul class="site-navigation">
-            <li class="site-navigation-item"><a href="#">Информация</a></li>
-            <li class="site-navigation-item"><a href="#">Фото и видео</a></li>
-          </ul>
-            <a class="home-page" href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Seedona"></a>
-          <ul class="site-navigation">
-            <li class="site-navigation-item"><a href="#">Карта штата</a></li>
-            <li class="site-navigation-item current-page"><a href="#">Гостиницы</a></li>
-          </ul>
-        </nav>
-      </header>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Информация</a></li>
+          <li class="site-navigation-item"><a href="#">Фото и видео</a></li>
+        </ul>
+          <a class="home-page" href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Seedona"></a>
+        <ul class="site-navigation">
+          <li class="site-navigation-item"><a href="#">Карта штата</a></li>
+          <li class="site-navigation-item current-page"><a href="#">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
 
+    <main class="main-container">
+      
+      <div class="container">
       <section class="filter">
+        <div class="filter-container">
         <!-- форма фильтра -->
         <!--<div class="background"></div>
         <img src="img/background.png" width="1200" height="217" alt="background">-->
         <form class="filter-form" action="" method="post">
-          <ul class="filter-selection">
+          <div class="filter-box">
             <h2>Инфраструктура:</h2>
-            <li class="filter-selection-item">
-              <label><input class="filter-input-checkbox" type="checkbox" name="pool" checked> бассейн</label>
-            </li>
-            <li class="filter-selection-item">
-              <label><input class="filter-input-checkbox" type="checkbox" name="parking"> парковка</label>
-            </li>
-            <li class="filter-selection-item">
-              <label><input class="filter-input-checkbox" type="checkbox" name="wi-fi"> wi-fi</label>
-            </li>
-          </ul>
-          <ul class="filter-selection filter-selection-second">
-            <h2>Тип жилья:</h2>
-            <li class="filter-selection-item">
-              <label><input class="filter-input-checkbox" type="checkbox" name="hotel" checked> отель</label>
-            </li>
-            <li class="filter-selection-item">
-              <label><input class="filter-input-checkbox" type="checkbox" name="motel" checked> мотель</label>
-            </li>
-            <li class="filter-selection-item">
-              <label><input class="filter-input-checkbox" type="checkbox" name="apartments" checked> апартаменты</label>
-            </li>
-          </ul>
+            <ul class="filter-selection">
+              <li class="filter-selection-item">
+                <label><input class="filter-input-checkbox" type="checkbox" name="pool" checked> бассейн</label>
+              </li>
+              <li class="filter-selection-item">
+                <label><input class="filter-input-checkbox" type="checkbox" name="parking"> парковка</label>
+              </li>
+              <li class="filter-selection-item">
+                <label><input class="filter-input-checkbox" type="checkbox" name="wi-fi"> wi-fi</label>
+              </li>
+            </ul>
+          </div>
+          <div class="filter-box">
+          <h2>Тип жилья:</h2>
+            <ul class="filter-selection filter-selection-second">
+              <li class="filter-selection-item">
+                <label><input class="filter-input-checkbox" type="checkbox" name="hotel" checked> отель</label>
+              </li>
+              <li class="filter-selection-item">
+                <label><input class="filter-input-checkbox" type="checkbox" name="motel" checked> мотель</label>
+              </li>
+              <li class="filter-selection-item">
+                <label><input class="filter-input-checkbox" type="checkbox" name="apartments" checked> апартаменты</label>
+              </li>
+            </ul>
+          </div>
           <div class="filter-selection filter-selection-show">
             <h2>Стоимость в сутки (Р):</h2>
             <div class="selection">
@@ -63,6 +70,7 @@
             <button class="filter-show" type="button">показать</button>
          </div>
         </form>
+        </div>
       </section>
 
       <section class="sorting-search">
@@ -148,6 +156,7 @@
               </li>
             </ul>
         </article>
+      </div>
       </section>
     </main>
 
