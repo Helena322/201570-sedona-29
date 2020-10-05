@@ -145,7 +145,10 @@ img {
 .feature-item-social,
 .footer-copyright p {
   display: inline-block;
-  margin: 0 10px;
+  margin: 0;
+  padding: 0;
+  padding-left: 3px;
+  padding-right: 3px;
 }
 
 .site-navigation {
@@ -297,7 +300,7 @@ nav img {
 	line-height: 21px;
 	color: var(--basic-black);
 	margin: 0;
-	margin-bottom: 25px;
+	padding: 0;
 }
 
 .feature-item p {
@@ -305,8 +308,10 @@ nav img {
 	line-height: 21px;
 	color: var(--basic-extra-dark);
 	font-weight: normal;
-	padding: 10px;
-	margin: 0 10px;
+	padding: 0;
+	margin: 0;
+	padding-top: 20px;
+	padding-bottom: 20px;
 }
 
 /* filter checkbox */
@@ -509,6 +514,9 @@ nav img {
 	line-height: 21px;
 	color: var(--basic-extra-dark);
 	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	padding-top: 25px;
 }
 
 /* Caption-post */
@@ -517,7 +525,6 @@ nav img {
 	display: flex;
 	min-height: 256px;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
@@ -527,14 +534,19 @@ nav img {
 	font-size: 21px;
 	line-height: 21px;
 	margin: 0;
-	margin-bottom: 25px;
+	padding: 0;
+	padding-top: 45px; 
+	padding-bottom: 15px;
 }
 
 .caption-post p {
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: normal;
-	margin: 0 10px;
+	margin: 0;
+	padding: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
 }
 
 /* interest, Caption */
@@ -614,6 +626,10 @@ nav img {
 .appointment-form {
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	align-self: center;
 	margin: 0;
 	padding: 0;
 	padding-top: 20px;
@@ -629,6 +645,8 @@ nav img {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	padding-left: 52px;
+	padding-right: 35px;
 }
 
 .appointment-form-first p,
@@ -645,6 +663,8 @@ nav img {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	padding-left: 23px;
+	padding-right: 0;
 }
 
 .appointment-form-first label {
@@ -654,6 +674,7 @@ nav img {
 }
 
 .appointment-item-first input {
+	position: relative;
 	width: 346px;
 	height: 38px;
 	padding-left: 10px;
@@ -664,24 +685,13 @@ nav img {
 	text-transform: uppercase;
 	margin: 0;
 	margin-left: 10px;
+	border: none;
+	background-color: var(--basic-light-gray);
 }
 
-/*.arrival-input::after,
-.leaving-input::after {
-	width: 11px;
-	height: 11px;
-	background-image: url("");
+input::-webkit-input-placeholder {
+	color: var(--basic-black);
 }
-
-.arrival::before,
-.leaving::before {
-
-}
-
-.arrival::after,
-.leaving::after {
-
-}*/
 
 .adults input,
 .children input {
@@ -696,7 +706,35 @@ nav img {
 	margin: 0;
 	margin-left: 10px;
 	text-align: center;
+	border: none;
+	background-color: var(--basic-light-gray);
 }
+
+.adults input {
+	position: relative;
+	left: 17px;
+}
+
+/*Safari, Chrome, Opera*/
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Firefox*/
+
+input[type="number"] {
+-moz-appearance: textfield;
+}
+
+input[type="number"]:hover,
+input[type="number"]:focus {
+-moz-appearance: number-input;
+}
+
+/* appointment */
 
 .appointment-item-people {
 	display: flex;
@@ -714,7 +752,7 @@ nav img {
 
 .button {
 	display: block;
-	width: 100%;
+	width: 458px;
 	height: 58px;
 	font: inherit;
 	text-align: center;
@@ -733,6 +771,50 @@ nav img {
 .button:active {
 	background-color: var(--button-active);
 	color: rgba(255, 255, 255, 0.3);
+}
+
+.minus {
+	display: block;
+	position: relative;
+	left: 35px;
+	top: -3px;
+}
+
+.plus {
+	display: block;
+	padding: 5px;
+	width: 30px;
+	height: 30px;
+	position: relative;
+	border: none;
+	right: 35px;
+	top: 7px;
+}
+
+.minus-adults {
+	left: 55px;
+	z-index: 20;
+}
+
+.plus-adults {
+	left: -15px;
+	top: 7px;
+	z-index: 20;
+}
+
+.arrival-input-button,
+.leaving-input-button {
+	display: block;
+	position: relative;
+	right: 30px;
+	top: 3px;
+}
+
+.arrival-input-button:hover path,
+.leaving-input-button:hover path,
+.minus:hover path,
+.plus:hover path {
+	fill: var(--basic-black);
 }
 
 /* modal-map */
@@ -765,7 +847,10 @@ nav img {
 
 .container-footer div {
 	display: flex;
+	justify-content: center;
 	align-items: center;
+	margin: 0;
+	padding: 0;
 }
 
 .footer-contacts {
@@ -810,13 +895,11 @@ nav img {
 .features-list-social {
 	display: flex;
 	flex-wrap: wrap;
-	flex-direction: row;
+	justify-content: center;
 	align-items: center;
-}
-
-
-.features-list-social {
 	list-style: none;
+	margin: 0;
+	padding: 0;
 }
 
 .social-button {
