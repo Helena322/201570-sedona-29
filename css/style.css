@@ -136,7 +136,7 @@ img {
 
 .welcome {
 	position: absolute;
-	top: 50px;
+	top: 77px;
 	left: 50%;
 	margin-left: -218px;
 }
@@ -710,10 +710,6 @@ input::-webkit-input-placeholder {
 	background-color: var(--basic-light-gray);
 }
 
-.adults input {
-	position: relative;
-	left: 17px;
-}
 
 /*Safari, Chrome, Opera*/
 
@@ -752,6 +748,8 @@ input[type="number"]:focus {
 
 .button {
 	display: block;
+	position: relative;
+	top: 15px;
 	width: 458px;
 	height: 58px;
 	font: inherit;
@@ -773,11 +771,22 @@ input[type="number"]:focus {
 	color: rgba(255, 255, 255, 0.3);
 }
 
+.adults-input {
+	position: relative;
+	left: 7px;
+}
+
+.children-input {
+	position: relative;
+	right: -13px;
+}
+
 .minus {
 	display: block;
 	position: relative;
-	left: 35px;
+	left: 47px;
 	top: -3px;
+	z-index: 20;
 }
 
 .plus {
@@ -787,18 +796,18 @@ input[type="number"]:focus {
 	height: 30px;
 	position: relative;
 	border: none;
-	right: 35px;
-	top: 7px;
+	right: 23px;
+	top: 3px;
 }
 
 .minus-adults {
-	left: 55px;
+	left: 40px;
 	z-index: 20;
 }
 
 .plus-adults {
-	left: -15px;
-	top: 7px;
+	left: -28px;
+	top: 3px;
 	z-index: 20;
 }
 
@@ -812,7 +821,7 @@ input[type="number"]:focus {
 
 .arrival-input-button:hover path,
 .leaving-input-button:hover path,
-.minus:hover path,
+.minus:hover rect,
 .plus:hover path {
 	fill: var(--basic-black);
 }
