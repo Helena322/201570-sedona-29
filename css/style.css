@@ -45,6 +45,7 @@ body {
 	background-color: var(--basic-white);
 	background-position: top center;
 	background-repeat: no-repeat;
+	box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .page-body {
@@ -93,9 +94,9 @@ img {
 .main-navigation {
 	display: flex;
 	box-sizing: border-box;
-	/*display: grid;
-	grid-template-columns: auto 1fr auto;*/
 	padding: 0;
+	padding-left: 72px;
+	padding-right: 72px;
 	font-size: 14px;
 	line-height: 26px;
 }
@@ -108,25 +109,6 @@ img {
 	padding: 0;
 	padding-top: 15px;
 	padding-bottom: 15px;
-}
-
-.site-navigation li:first-child {
-	margin-left: 72px;
-	margin-right: 0;
-}
-
-.site-navigation li:nth-child(2) {
-	margin-left: 135px;
-	margin-right: auto;
-}
-
-.site-navigation li:nth-child(3) {
-	margin-right: 146px;
-}
-
-
-.site-navigation li:last-child {
-	margin-right: 72px;
 }
 
 .site-navigation a {
@@ -147,8 +129,7 @@ img {
 }
 
 .logo img {
-	display: grid;
-	justify-self: center;
+	display: block;
 	margin: 0 auto;
 }
 
@@ -163,6 +144,9 @@ img {
 }
 
 .welcome {
+	display: block;
+	height: 352px;
+	width: 458px;
 	position: relative;
 	margin-left: auto;
 	margin-right: auto;
@@ -170,7 +154,6 @@ img {
 	left: 0;
 	right: 0;
 }
-
 
 .feature-item-social,
 .footer-copyright p {
@@ -182,20 +165,34 @@ img {
 }
 
 .site-navigation-item {
-	/*display: flex;
-	align-items: center;*/
+	display: flex;
+	align-items: center;
 	margin: 0;
 	padding: 0;
+}
+
+.site-navigation-item:first-child {
+	width: 20%;
+}
+
+.site-navigation-item:nth-child(2) {
+	width: 30%;
+}
+
+.site-navigation-item:nth-child(3) {
+	width: 30%;
+	justify-content: flex-end;
+}
+
+.site-navigation-item:last-child {
+	width: 20%;
+	justify-content: flex-end;
 }
 
 .site-navigation-item a {
 	display: block;
 	margin: 0;
 	padding: 0;
-}
-
-.site-navigation-item a:nth-child(2) {
-	padding-left: 100px;
 }
 
 nav img {
@@ -232,7 +229,14 @@ nav img {
 }
 
 .filter {
+	margin: 0;
+	padding: 0;
+	padding-top: 25px;
+	padding-left: 72px;
+	padding-right: 73px;
 	background-image: url("../img/background.png");
+	background-size: cover;
+	background-repeat: no-repeat;
 	z-index: 0;
 }
 
@@ -584,6 +588,8 @@ nav img {
 	margin: 0;
 	padding: 0;
 	padding-top: 48px;
+	padding-left: 20px;
+	padding-right: 20px;
 }
 
 .caption-post h3 {
@@ -664,6 +670,7 @@ nav img {
 	line-height: 26px;
 	text-transform: uppercase;
 	background-color: var(--basic-dark-brown);
+	color: var(--basic-white);
 }
 
 .search-heading-button:hover {
@@ -742,7 +749,9 @@ nav img {
 	align-items: center;
 	margin: 0;
 	padding: 0;
-	padding-left: 20px;
+}
+
+.appointment-form-first p {
 	margin-bottom: 28px;
 }
 
@@ -897,9 +906,10 @@ input[type="number"]:focus {
 .arrival-input-button,
 .leaving-input-button {
 	display: block;
-	position: relative;
-	right: 30px;
-	top: 3px;
+	position: absolute;
+	margin-left: 427px;
+	margin-top: 5px;
+	z-index: 100;
 }
 
 .arrival-input-button:hover path,
@@ -1066,24 +1076,15 @@ input[type="number"]:focus {
 
 /*filter-selection*/
 
-/*.container {
-	display: flex;
-	flex-direction: column;
-	width: 1200px;
-	height: auto;
-	margin: 0;
-	padding: 0;
-	padding-left: 50px;
-	padding-right: 50px;
-}*/
+.container {
+	max-width: 1200px;
+}
 
 .filter-container {
 	display: flex;
 	box-sizing: border-box;
 	max-width: 1200px;
 	padding: 0;
-	padding-left: 72px;
-	padding-right: 72px;
 }
 
 .filter-box {
@@ -1104,18 +1105,9 @@ input[type="number"]:focus {
 	/*display: grid;
 	grid-template-columns: 1fr 1fr 3fr;
 	justify-items: center;
-	background-color: var(--basic-dark-gray);*/
-}
+	background-color: var(--basic-dark-gray);
+}*/
 
-.filter-form {
-	display: flex;
-	min-height: 217px;
-	width: 1200px;
-	box-sizing: border-box;
-	/*display: grid;
-	grid-template-columns: 1fr 1fr 3fr;
-	justify-items: center;
-	background-color: var(--basic-dark-gray);*/
 }
 
 .filter-form h2 {
@@ -1123,8 +1115,6 @@ input[type="number"]:focus {
 	font-size: 16px;
 	line-height: 21px;
 	margin: 0;
-	padding-top: 26px;
-	padding-bottom: 20px;
 }
 
 .filter-selection p,
@@ -1158,20 +1148,15 @@ input[type="number"]:focus {
 .filter-selection {
 	display: flex;
 	flex-direction: column;
-	flex-grow: 1;
-	justify-content: space-between;
 	list-style: none;
 	color: var(--basic-white);
 	margin: 0;
 	padding: 0;
-	padding-top: 5px;
-	padding-bottom: 25px;
 }
 
 .filter-selection-show {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-around;
 	padding: 0;
 	margin: 0;
 	flex-grow: 0;
@@ -1198,8 +1183,8 @@ input[type="number"]:focus {
 }
 
 .filter-selection-show h2 {
+	margin: 0;
 	padding: 0;
-	padding-top: 20px;
 }
 
 .filter-selection-show p {
