@@ -231,11 +231,9 @@ nav img {
 .filter {
 	margin: 0;
 	padding: 0;
-	padding-top: 25px;
 	padding-left: 72px;
 	padding-right: 73px;
 	background-image: url("../img/background.png");
-	background-size: cover;
 	background-repeat: no-repeat;
 	z-index: 0;
 }
@@ -738,6 +736,7 @@ nav img {
 	display: flex;
 	flex-direction: column;
 	flex-wrap: wrap;
+	width: 100%;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 54px;
@@ -761,6 +760,12 @@ nav img {
 	margin-right: 20px;
 }
 
+.adults .label-text {
+	margin: 0;
+	padding: 0;
+	margin-right: 33px;
+}
+
 .appointment-item-first input {
 	position: relative;
 	width: 330px;
@@ -782,9 +787,8 @@ input::-webkit-input-placeholder {
 
 .adults input,
 .children input {
-	width: 100px;
+	width: 115px;
 	height: 38px;
-	padding-left: 10px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -826,6 +830,7 @@ input[type="number"]:focus {
 
 .appointment-item-people label {
 	display: flex;
+	position: relative;
 	align-items: center;
 }
 
@@ -855,20 +860,24 @@ input[type="number"]:focus {
 }
 
 .adults-input {
+	padding: 0;
 	position: relative;
 	left: 7px;
 }
 
-.children-input {
+.children input {
+	width: 110px;
 	position: relative;
 	right: -13px;
 }
 
 .minus {
 	display: block;
-	position: relative;
-	left: 40px;
-	top: -3px;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	right: 65px;
+	top: 4px;
 	z-index: 20;
 }
 
@@ -877,38 +886,51 @@ input[type="number"]:focus {
 	padding: 5px;
 	width: 30px;
 	height: 30px;
-	position: relative;
+	position: absolute;
 	border: none;
-	right: 20px;
+	right: -15px;
 	top: 3px;
 }
 
 .minus-adults {
-	left: 33px;
+	position: absolute;
+	right: 75px;
 	z-index: 20;
 }
 
 .plus-adults {
-	left: -29px;
+	position: absolute;
+	right: -7px;
 	top: 3px;
 	z-index: 20;
 }
 
 .adults {
-	padding-left: 23px;
-	margin-right: 23px;
+	margin-right: 60px;
 }
 
 .children .label-text {
 	margin: 0;
+	margin-right: 12px;
 }
 
-.arrival-input-button,
+.arrival {
+	position: relative;
+}
+
+.arrival-input-button {
+	display: block;
+	position: absolute;
+	right: 8px;
+	top: 9px;
+	z-index: 100;
+}
+
 .leaving-input-button {
 	display: block;
 	position: absolute;
-	margin-left: 427px;
-	margin-top: 5px;
+	right: 380px;
+	top: 214px;
 	z-index: 100;
 }
 
@@ -1101,6 +1123,9 @@ input[type="number"]:focus {
 	display: flex;
 	min-height: 217px;
 	width: 1200px;
+	padding: 0;
+	margin: 0;
+	padding-top: 25px;
 	box-sizing: border-box;
 	/*display: grid;
 	grid-template-columns: 1fr 1fr 3fr;
@@ -1173,8 +1198,6 @@ input[type="number"]:focus {
 }*/
 
 .selection {
-	display: flex;
-	justify-content: space-around;
 	align-items: center;
 	width: 313px;
 	height: 32px;
@@ -1186,34 +1209,32 @@ input[type="number"]:focus {
 }
 
 .filter-item {
+	width: 317px;
 	margin: 0;
 	padding: 0;
 	border: none;
+	font-family: inherit;
+	font-size: 14px;
+    line-height: 26px;
 }
 
 .range-filter {
-	width: 260px;
-	margin-top: 49px;
-}
-
-.range-filter {
-	width: 260px;
 	margin: 0;
 	padding: 0;
 }
 
 .filter-item legend {
-	font-size: 18px;
-	line-height: 24px;
-	text-transform: uppercase;
-	font-weight: 700;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 0;
+	margin: 0;
+	margin-bottom: 7px;
 }
 
 .range-controls {
 	position: relative;
-	margin-bottom: 15px;
+	margin-bottom: 33px;
 	padding-right: 20px;
-	padding-left: 20px;
 	background-color: #f1f1f1;
 	border-radius: 5px;
 }
@@ -1221,6 +1242,7 @@ input[type="number"]:focus {
 .range-controls .scale {
 	height: 2px;
 	background: #d7dcde;
+
 }
 
 .range-controls .bar {
@@ -1231,12 +1253,12 @@ input[type="number"]:focus {
 
 .range-controls .toggle {
 	position: absolute;
-	top: 31px;
+	top: -10px;
 	left: 0;
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid #ffffff;
+	border: 8px solid var(--basic-white);
 	background-color: #ababab;
 	border-radius: 50%;
 	box-shadow: 0 2px 1px 0 #cfcfcf;
@@ -1245,34 +1267,31 @@ input[type="number"]:focus {
 
 .price-controls {
 	display: flex;
-	justify-content: space-between;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 20px;
 }
 
 .price-controls label {
-	text-transform: uppercase;
-	font-family: "Roboto", "Arial", sans-serif;
-	font-size: 16px;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: normal;
+	margin-left: 65px;
+}
+
+.price-controls .max-price {
+	margin-left: 70px;
 }
 
 .price-controls input {
-	width: 60px;
-	padding: 10px;
-	margin-left: 10px;
-	text-align: center;
-	color: #283136;
+	width: 50px;
 	border: none;
-	border-radius: 5px;
-	background: #f1f1f1;
-	font-family: inherit;
-	font-size: inherit;
-}
-
-.range-controls .toggle-min {
-  left: 18px;
+	background: transparent;
+	color: var(--basic-white);
 }
 
 .range-controls .toggle-max {
-  left: 160px;
+  left: 253px;
 }
 
 .filter-selection-show h2 {
@@ -1291,8 +1310,15 @@ input[type="number"]:focus {
 	margin: 0;
 }
 
-.filter-show {
+.filter-show-box {
 	display: flex;
+	margin: 0; 
+	padding: 0;
+	margin-left: 85px;
+}
+
+.filter-show {
+	display: block;
 	width: 137px;
 	height: 36px;
 	justify-content: center;
