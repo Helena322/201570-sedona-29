@@ -172,20 +172,20 @@ img {
 }
 
 .site-navigation-item:first-child {
-	width: 20%;
+	width: 30%;
 }
 
 .site-navigation-item:nth-child(2) {
-	width: 30%;
+	width: 40%;
 }
 
 .site-navigation-item:nth-child(3) {
-	width: 30%;
+	width: 40%;
 	justify-content: flex-end;
 }
 
 .site-navigation-item:last-child {
-	width: 20%;
+	width: 30%;
 	justify-content: flex-end;
 }
 
@@ -1115,6 +1115,8 @@ input[type="number"]:focus {
 	font-size: 16px;
 	line-height: 21px;
 	margin: 0;
+	padding: 0;
+	margin-bottom: 25px;
 }
 
 .filter-selection p,
