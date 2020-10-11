@@ -717,6 +717,7 @@ nav img {
 	line-height: 26px;
 }
 
+.section-heading,
 .visually-hidden {
   position: relative;
   width: 1px;
@@ -1363,6 +1364,7 @@ input[type="number"]:focus {
 	border: 2px solid var(--basic-white);
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: bold;
 	margin: 0;
 }
 
