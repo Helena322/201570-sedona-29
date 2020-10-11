@@ -756,6 +756,7 @@ nav img {
 
 .appointment-form-first label {
 	display: flex;
+	position: relative;
 	justify-content: space-between;
 	align-items: center;
 	margin: 0;
@@ -941,8 +942,8 @@ input[type="number"]:focus {
 .leaving-input-button {
 	display: block;
 	position: absolute;
-	right: 380px;
-	top: 214px;
+	right: 8px;
+	top: 8px;
 	z-index: 100;
 }
 
@@ -1267,15 +1268,13 @@ input[type="number"]:focus {
 
 .scale {
 	height: 2px;
-	background: var(--basic-white);
-	opacity: 0.3;
+	background: rgba(255, 255, 255, 0.3);
 }
 
 .range-controls .bar {
 	width: 80%;
 	height: 2px;
 	background: var(--basic-white);
-	opacity: 1;
 }
 
 .range-controls .toggle {
