@@ -27,6 +27,8 @@
 	--rating: #666666;
 	--checkbox-active: #6A6A6A;
 	--border: #E5E5E5;
+	--toggle: #ababab;
+	--box-shadow: #cfcfcf;
 }
 
 
@@ -50,11 +52,11 @@ body {
 
 .page-body {
 	display: grid;
-	min-height: 100%;
 	grid-template-rows: min-content 1fr min-content;
 	align-content: start;
-	max-width: 1200px;
 	justify-self: center;
+	min-height: 100%;
+	max-width: 1200px;
 	margin: 0 auto;
 }
 
@@ -134,7 +136,7 @@ img {
 }
 
 .city-of-seedona,
-.home-page img{
+.home-page img {
 	position: absolute;
 	margin-left: auto;
 	margin-right: auto;
@@ -157,11 +159,11 @@ img {
 
 .feature-item-social,
 .footer-copyright p {
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-  padding-left: 3px;
-  padding-right: 3px;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	padding-left: 3px;
+	padding-right: 3px;
 }
 
 .site-navigation-item {
@@ -216,8 +218,8 @@ nav img {
 .logo {
 	position: relative;
 	background-image: url("../img/background_photo.jpg");
-	width: 1200px;
 	height: 509px;
+	width: 1200px;
 	z-index: 0;
 }
 
@@ -229,12 +231,12 @@ nav img {
 }
 
 .filter {
+	background-image: url("../img/background.png");
+	background-repeat: no-repeat;
 	margin: 0;
 	padding: 0;
 	padding-left: 72px;
 	padding-right: 73px;
-	background-image: url("../img/background.png");
-	background-repeat: no-repeat;
 	z-index: 0;
 }
 
@@ -297,22 +299,22 @@ nav img {
 	flex-wrap: wrap;
 	position: relative;
 	max-width: 470px;
-	font-size: 21px;
-	line-height: 26px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 43px;
 	z-index: 10;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .rectangle-first p {
 	position: relative;
+	margin: 0;
+	padding: 0;
 	z-index: 10;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
-	margin: 0;
-	padding: 0;
 }
 
 .rectangle-second {
@@ -330,12 +332,12 @@ nav img {
 }
 
 .feature-item h3 {
-	font-size: 21px;
-	line-height: 21px;
 	color: var(--basic-black);
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
+	font-size: 21px;
+	line-height: 21px;
 }
 
 .feature-item-burger h3 {
@@ -343,12 +345,12 @@ nav img {
 }
 
 .feature-item p {
-	font-size: 14px;
-	line-height: 21px;
 	color: var(--basic-extra-dark);
 	font-weight: normal;
 	padding: 0;
 	margin: 0;
+	font-size: 14px;
+	line-height: 21px;
 }
 
 /* filter checkbox */
@@ -409,16 +411,16 @@ nav img {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	margin-left: 30px;
 	box-sizing: border-box;
 }
 
 .hotel h2 {
 	display: flex;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
 
 .hotel p {
@@ -443,8 +445,8 @@ nav img {
 .search-results-list {
 	list-style: none;
 	width: 100%;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	border-bottom: 1px solid var(--border);
 }
 
@@ -464,14 +466,13 @@ nav img {
 	padding-top: 30px;
 	padding-bottom: 30px;
 	border-top: 1px solid var(--border);
-
 }
 
 .search-results-item h2 {
 	position: relative;
-	top: -5px;
 	margin: 0;
 	padding: 0;
+	top: -5px;
 	font-size: 21px;
 	line-height: 26px;
 }
@@ -484,10 +485,10 @@ nav img {
 }
 
 .hotel-info {
-	position: relative;
 	display: flex;
-	width: 180px;
+	position: relative;
 	justify-content: space-between;
+	width: 180px;
 	top: -8px;
 	margin: 0;
 	padding: 0;
@@ -495,11 +496,11 @@ nav img {
 
 .search-image {
 	display: block;
-	padding: 0;
 	height: 90px;
 	width: 135px;
 	align-items: center;
 	margin: 0;
+	padding: 0;
 }
 
 .rating p {
@@ -509,33 +510,32 @@ nav img {
 
 .reservation {
 	display: flex;
-	
 }
 
 .search-results-button-detail {
+	width: 110px;
+	height: 27px;
 	color: var(--basic-white);
 	background-color: var(--basic-blue);
 	border: none;
-	width: 110px;
-	height: 27px;
-	font-weight: bold;
 	font-size: 14px;
 	line-height: 21px;
+	font-weight: bold;
 	text-transform: uppercase;
 }
 
 .search-results-button-stay {
-	color: var(--basic-white);
-	background-color: var(--basic-dark-brown);
-	border: none;
 	width: 142px;
 	height: 27px;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 21px;
-	text-transform: uppercase;
+	color: var(--basic-white);
+	background-color: var(--basic-dark-brown);
 	margin: 0;
 	margin-left: 6px;
+	border: none;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: bold;
+	text-transform: uppercase;
 }
 
 .search-results-button-detail:hover {
@@ -543,8 +543,8 @@ nav img {
 }
 
 .search-results-button-detail:active {
-	background-color: var(--button-active);
 	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--button-active);
 }
 
 .search-results-button-stay:hover {
@@ -552,8 +552,8 @@ nav img {
 }
 
 .search-results-button-stay:active {
-	background-color: var(--search-active);
 	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--search-active);
 }
 
 /* rectangle-third */
@@ -568,22 +568,22 @@ nav img {
 }
 
 .rectangle-third h3{
-	padding: 0;
+	color: var(--basic-black);
 	margin: 0;
+	padding: 0;
 	margin-bottom: 30px;
 	font-size: 21px;
 	line-height: 21px;
-	color: var(--basic-black);
 }
 
 .rectangle-third p {
-	font-size: 14px;
-	line-height: 21px;
 	color: var(--basic-extra-dark);
-	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 20px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
 }
 
 /* Caption-post */
@@ -603,20 +603,20 @@ nav img {
 }
 
 .caption-post h3 {
-	font-size: 21px;
-	line-height: 21px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
+	font-size: 21px;
+	line-height: 21px;
 }
 
 .caption-post p {
-	font-size: 14px;
-	line-height: 21px;
-	font-weight: normal;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
 }
 
 /* interest, Caption */
@@ -633,19 +633,19 @@ nav img {
 }
 
 .caption h2 {
-	font-size: 30px;
-	line-height: 24px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 32px;
+	font-size: 30px;
+	line-height: 24px;
 }
 
 .caption p {
+	margin: 0;
+	padding: 0;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: normal;
-	margin: 0;
-	padding: 0;
 }
 
 /* search */
@@ -658,10 +658,10 @@ nav img {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin: 0 auto;
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
-	margin: 0 auto;
 }
 
 .search-heading {
@@ -671,6 +671,8 @@ nav img {
 }
 
 .search-heading-button {
+	color: var(--basic-white);
+	background-color: var(--basic-dark-brown);
 	width: 568px;
 	min-height: 86px;
 	border: none;
@@ -680,18 +682,16 @@ nav img {
 	font-size: 21px;
 	line-height: 26px;
 	text-transform: uppercase;
-	background-color: var(--basic-dark-brown);
-	color: var(--basic-white);
 }
 
 .search-heading-button:hover {
-	background-color: var(--search-hover);
 	color: var(--basic-white);
+	background-color: var(--search-hover);
 }
 
 .search-heading-button:active {
-	background-color: var(--search-active);
 	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--search-active);
 }
 
 .layer {
@@ -720,16 +720,16 @@ nav img {
 
 .section-heading,
 .visually-hidden {
-  position: relative;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: relative;
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
 .appointment-form-first {
@@ -783,21 +783,17 @@ nav img {
 
 .appointment-item-first input {
 	position: relative;
-	width: 330px;
+	background-color: var(--basic-light-gray);
 	height: 38px;
+	width: 330px;
 	padding-left: 13px;
+	margin: 0;
+	border: none;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
 	line-height: 26px;
 	text-transform: uppercase;
-	margin: 0;
-	border: none;
-	background-color: var(--basic-light-gray);
-}
-
-input::-webkit-input-placeholder {
-	color: var(--basic-black);
 }
 
 .adults input,
@@ -815,8 +811,11 @@ input::-webkit-input-placeholder {
 	background-color: var(--basic-light-gray);
 }
 
-
 /*Safari, Chrome, Opera*/
+
+input::-webkit-input-placeholder {
+	color: var(--basic-black);
+}
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
@@ -851,18 +850,18 @@ input[type="number"]:focus {
 
 .button {
 	display: block;
-	padding: 0;
-	margin: 0;
-	width: 458px;
-	height: 58px;
-	font: inherit;
-	text-align: center;
 	color: var(--basic-white);
-	text-transform: uppercase;
 	background-color: var(--basic-blue);
+	text-align: center;
+	height: 58px;
+	width: 458px;
+	margin: 0;
+	padding: 0;
 	border: none;
+	font: inherit;
 	font-size: 21px;
 	line-height: 26px;
+	text-transform: uppercase;
 }
 
 .button:hover {
@@ -870,13 +869,13 @@ input[type="number"]:focus {
 }
 
 .button:active {
-	background-color: var(--button-active);
 	color: rgba(255, 255, 255, 0.3);
+	background-color: var(--button-active);
 }
 
 .adults-input {
-	padding: 0;
 	position: relative;
+	padding: 0;
 	left: 7px;
 }
 
@@ -888,9 +887,9 @@ input[type="number"]:focus {
 
 .minus {
 	display: block;
-	width: 30px;
-	height: 30px;
 	position: absolute;
+	height: 30px;
+	width: 30px;
 	right: 65px;
 	top: 4px;
 	z-index: 20;
@@ -898,13 +897,13 @@ input[type="number"]:focus {
 
 .plus {
 	display: block;
-	padding: 5px;
-	width: 30px;
-	height: 30px;
 	position: absolute;
+	height: 30px;
+	width: 30px;
+	padding: 5px;
 	border: none;
-	right: -15px;
 	top: 3px;
+	right: -15px;
 }
 
 .minus-adults {
@@ -915,8 +914,8 @@ input[type="number"]:focus {
 
 .plus-adults {
 	position: absolute;
-	right: -7px;
 	top: 3px;
+	right: -7px;
 	z-index: 20;
 }
 
@@ -936,16 +935,16 @@ input[type="number"]:focus {
 .arrival-input-button {
 	display: block;
 	position: absolute;
-	right: 8px;
 	top: 9px;
+	right: 8px;
 	z-index: 100;
 }
 
 .leaving-input-button {
 	display: block;
 	position: absolute;
-	right: 8px;
 	top: 8px;
+	right: 8px;
 	z-index: 100;
 }
 
@@ -966,10 +965,10 @@ input[type="number"]:focus {
 /* modal-map */
 
 .modal-map {
-	margin: 0;
 	position: absolute;
-	width: 1199px;
 	height: 590px;
+	width: 1200px;
+	margin: 0;
 	margin-top: -477px;
 	z-index: -20;
 }
@@ -1002,22 +1001,21 @@ input[type="number"]:focus {
 .container-footer .footer-contacts {
 	display: flex;
 	flex-direction: column;
+	min-width: 250px;
 	justify-content: center;
 	align-items: center;
-	min-width: 250px;
 	margin: 0;
-	padding: 0;
 	padding: 18px;
 	padding-left: 90px;
 }
 
 .footer-contacts p {
 	color: var(--basic-black);
-	font-size: 21px;
-	line-height: 26px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 10px;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .container-footer .footer-copyright {
@@ -1060,10 +1058,10 @@ input[type="number"]:focus {
 
 .social-button {
 	display: flex;
-  	align-items: center;
-  	justify-content: center;
- 	width: 46px;
-  	height: 48px;
+	align-items: center;
+	justify-content: center;
+	height: 48px;
+	width: 46px;
 	background-color: var(--basic-blue);
 }
 
@@ -1073,7 +1071,6 @@ input[type="number"]:focus {
 
 .social-button:active {
 	background-color: var(--button-active);
-	
 }
 
 .social-button:active path{
@@ -1092,12 +1089,12 @@ input[type="number"]:focus {
 
 .footer-copyright p {
 	color: var(--basic-black);
+	margin: 0;
+	padding: 0;
+	margin-right: 9px;
 	font-weight: normal;
 	font-size: 14px;
 	line-height: 26px;
-	padding: 0;
-	margin: 0;
-	margin-right: 9px;
 }
 
 .button-copyright:hover {
@@ -1107,9 +1104,6 @@ input[type="number"]:focus {
 .button-copyright:active {
 	color: var(--logo-press);
 }
-
-/* hotels */
-
 
 /*filter-selection*/
 
@@ -1136,35 +1130,34 @@ input[type="number"]:focus {
 
 .filter-form {
 	display: flex;
+	box-sizing: border-box;
 	min-height: 217px;
 	width: 1200px;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	padding-top: 25px;
-	box-sizing: border-box;
 	/*display: grid;
 	grid-template-columns: 1fr 1fr 3fr;
 	justify-items: center;
 	background-color: var(--basic-dark-gray);
 }*/
-
 }
 
 .filter-form h2 {
 	color: var(--basic-white);
-	font-size: 16px;
-	line-height: 21px;
 	margin: 0;
 	padding: 0;
 	margin-bottom: 25px;
+	font-size: 16px;
+	line-height: 21px;
 }
 
 .filter-selection p,
 .filter-selection span,
 .filter-selection-item {
+	font-weight: normal;
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: normal;
 }
 
 .label-checkbox:active path {
@@ -1173,8 +1166,8 @@ input[type="number"]:focus {
 
 .checkbox-text {
 	position: relative;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	top: -7px;
 	left: 15px;
 }
@@ -1186,8 +1179,8 @@ input[type="number"]:focus {
 
 .price-rect {
 	position: absolute;
-	right: 154px;
 	top: 5px;
+	right: 154px;
 }
 
 .filter-selection,
@@ -1199,25 +1192,25 @@ input[type="number"]:focus {
 
 .filter-selection {
 	display: flex;
+	color: var(--basic-white);
 	flex-direction: column;
 	list-style: none;
-	color: var(--basic-white);
 	margin: 0;
 	padding: 0;
 }
 
 .filter-selection-item {
-	padding: 0;
 	margin: 0;
+	padding: 0;
 	margin-bottom: 17px;
 }
 
 .filter-selection-show {
 	display: flex;
 	flex-direction: column;
-	padding: 0;
-	margin: 0;
 	flex-grow: 0;
+	margin: 0;
+	padding: 0;
 	margin-left: auto;
 }
 
@@ -1230,13 +1223,13 @@ input[type="number"]:focus {
 
 .selection {
 	align-items: center;
-	width: 313px;
 	height: 32px;
-	padding: 0;
+	width: 313px;
 	margin: 0;
+	padding: 0;
+	margin-bottom: 10px;
 	border-radius: 2px;
-  	border: 2px solid var(--basic-white);
-  	margin-bottom: 10px;
+	border: 2px solid var(--basic-white);
 }
 
 .filter-item {
@@ -1246,7 +1239,7 @@ input[type="number"]:focus {
 	border: none;
 	font-family: inherit;
 	font-size: 14px;
-    line-height: 26px;
+	line-height: 26px;
 }
 
 .range-filter {
@@ -1255,11 +1248,11 @@ input[type="number"]:focus {
 }
 
 .filter-item legend {
-	font-size: 16px;
-	line-height: 26px;
 	padding: 0;
 	margin: 0;
 	margin-bottom: 7px;
+	font-size: 16px;
+	line-height: 26px;
 }
 
 .range-controls {
@@ -1274,22 +1267,22 @@ input[type="number"]:focus {
 }
 
 .range-controls .bar {
-	width: 80%;
 	height: 2px;
+	width: 80%;
 	background: var(--basic-white);
 }
 
 .range-controls .toggle {
 	position: absolute;
+	background-color: var(--toggle);
+	height: 4px;
+	width: 4px;
 	top: -10px;
 	left: 0;
-	width: 4px;
-	height: 4px;
 	padding: 0;
-	border: 8px solid var(--basic-white);
-	background-color: #ababab;
 	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	border: 8px solid var(--basic-white);
+	box-shadow: 0 2px 1px 0 var(--box-shadow);
 	cursor: pointer;
 }
 
@@ -1306,10 +1299,10 @@ input[type="number"]:focus {
 }
 
 .price-controls label {
+	margin-left: 65px;
 	font-size: 14px;
 	line-height: 26px;
 	font-weight: normal;
-	margin-left: 65px;
 }
 
 .price-controls .max-price {
@@ -1317,14 +1310,14 @@ input[type="number"]:focus {
 }
 
 .price-controls input {
+	color: var(--basic-white);
 	width: 50px;
 	border: none;
 	background: transparent;
-	color: var(--basic-white);
 }
 
 .range-controls .toggle-max {
-  left: 253px;
+	left: 253px;
 }
 
 .filter-selection-show h2 {
@@ -1352,26 +1345,25 @@ input[type="number"]:focus {
 
 .filter-show {
 	display: block;
-	width: 137px;
+	color: inherit;
 	height: 36px;
+	width: 137px;
 	justify-content: center;
 	align-items: center;
 	align-self: center;
-	color: inherit;
-	font-weight: normal;
-	text-transform: inherit;
+	margin: 0;
 	background-color: rgba(0, 0, 0, 0);
 	border-radius: 2px;
 	border: 2px solid var(--basic-white);
 	font-size: 14px;
 	line-height: 21px;
 	font-weight: bold;
-	margin: 0;
+	text-transform: inherit;
 }
 
 .filter-show:hover {
-	background: var(--basic-white);
 	color: var(--basic-black);
+	background: var(--basic-white);
 }
 
 /*.filter-selection p {
@@ -1425,26 +1417,24 @@ input[type="number"]:focus {
 .sort-type p {
 	/*display: inline-block;*/
 	display: flex;
-	font-size: 12px;
-	line-height: 18px;
-	font-weight: normal;
 	padding: 0;
 	margin: 0;
 	margin-right: 40px;
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
 }
 
 .sort-type-item {
 	/*display: inline-block;*/
 	display: flex;
 	align-items: center;
-	font-size: 21px;
-	line-height: 26px;
 	margin: 0;
 	padding: 0;
 	margin-right: 32px;
+	font-size: 21px;
+	line-height: 26px;
 }
-
-
 
 /*.sort-type {
 	
@@ -1459,22 +1449,22 @@ input[type="number"]:focus {
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+	list-style: none;
 	margin: 0;
 	padding: 0;
 	margin-left: 0;
-	list-style: none;
 	/*display: grid;
 	grid-template-columns: 1fr 1fr 1fr;*/
 }
 
 .sort-type-item a {
-	font-weight: normal;
-	font-size: 12px;
-	line-height: 18px;
-	opacity: 0.3;
 	color: var(--basic-black);
 	border-bottom-style: dotted;
 	border-width: thin;
+	opacity: 0.3;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 18px;
 }
 
 .sort-type-item a:hover {
@@ -1495,7 +1485,6 @@ input[type="number"]:focus {
 .sort-type-item:last-child {
 	margin-right: 0;
 }
-
 
 .sorting-icons {
 	display: flex;
@@ -1555,10 +1544,10 @@ input[type="number"]:focus {
 
 .rating p {
 	display: flex;
+	height: 27px;
+	width: 110px;
 	justify-content: center;
 	align-items: center;
-	width: 110px;
-	height: 27px;
-	padding: 0;
 	margin: 0;
+	padding: 0;
 }
