@@ -651,8 +651,9 @@ nav img {
 /* search */
 
 .search {
-	display: flex;
+	display: block;
 	position: relative;
+	width: 568px;
 	top: -85px;
 	flex-direction: column;
 	justify-content: center;
@@ -968,7 +969,7 @@ input[type="number"]:focus {
 	margin: 0;
 	position: absolute;
 	width: 1199px;
-	height: 594px;
+	height: 590px;
 	margin-top: -477px;
 	z-index: -20;
 }
