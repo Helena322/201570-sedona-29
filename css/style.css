@@ -355,14 +355,6 @@ nav img {
 
 /* filter checkbox */
 
-.filter-input-checkbox:hover + label {
-	background-color: var(--basic-white);
-}
-
-.filter-input-checkbox:active + label {
-	background-color: var(--checkbox-active);
-}
-
 /*.label-checkbox {
 	display: block;
 	width: 23px;
@@ -981,13 +973,9 @@ input[type="number"]:focus {
 	max-width: 1200px;
 }
 
-.page-footer div {
-	margin: 0 auto;
-}
-
 .page-footer .container-footer {
 	display: grid;
-	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-columns: 1fr 250px 1fr;
 	justify-self: center;
 }
 
@@ -996,42 +984,44 @@ input[type="number"]:focus {
 	justify-content: center;
 	align-items: center;
 	margin: 0;
+	padding: 0;
+	padding-top: 20px;
 }
 
 .container-footer .footer-contacts {
-	display: flex;
 	flex-direction: column;
-	min-width: 250px;
-	justify-content: center;
-	align-items: center;
 	margin: 0;
-	padding: 18px;
-	padding-left: 90px;
+	padding: 0;
+	padding-top: 20px;
+}
+
+.footer-contacts h3 {
+	color: var(--basic-black);
+	margin: 0;
+	padding: 0;
+	margin-bottom: 9px;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .footer-contacts p {
 	color: var(--basic-black);
 	margin: 0;
 	padding: 0;
-	margin-bottom: 10px;
 	font-size: 21px;
 	line-height: 26px;
 }
 
-.container-footer .footer-copyright {
-	justify-content: flex-start;
-	padding-top: 4px;
-	padding-left: 65px;
-
-}
-
-.footer-social {
-	min-width: 200px;
-}
-
 .footer-copyright {
-	min-width: 200px;
-	margin: 0;
+	justify-content: flex-start;
+}
+
+.container-footer .footer-social {
+	padding-top: 30px;
+}
+
+.container-footer .footer-copyright {
+	padding-top: 35px;
 }
 
 /* footer-phone */
@@ -1160,34 +1150,61 @@ input[type="number"]:focus {
 	line-height: 21px;
 }
 
-.label-checkbox:active path {
-	fill: var(--checkbox-active);
+.filter-input-checkbox + label::before {
+	content: "";
+	position: absolute;
+	height: 19px;
+	width: 19px;
+	top: 2px;
+	left: -29px;
+	border-radius: 4px;
+	border: 2px solid var(--basic-white);
+}
+
+.filter-input-checkbox-second + label::before {
+	left: -28px;
+}
+
+.filter-input-checkbox:checked + label::before {
+	height: 23px;
+	width: 23px;
+	border: none;
+	background: url("../img/shape.png") no-repeat;
+}
+
+.filter-input-checkbox:checked + label::after {
+	content: "";
+	position: absolute;
+	height: 23px;
+	width: 23px;
+	top: 3px;
+	left: -25px;
+	background: url("../img/check_mark.png") no-repeat;
+}
+
+.filter-input-checkbox:active + label::before {
+	border-color: var(--checkbox-active);
+}
+
+.filter-input-checkbox:active + label::after {
+	border-color: var(--checkbox-active);
+	background: url("../img/check_mark_dark.png") no-repeat;
+}
+
+.filter-input-checkbox:checked:active + label::before {
+	background: url("../img/shape_dark.png") no-repeat;
 }
 
 .checkbox-text {
-	position: relative;
 	margin: 0;
 	padding: 0;
-	top: -7px;
-	left: 15px;
-}
-
-.checkbox-text-flow {
-	top: -8px;
-	left: 13px;
+	padding-left: 10px;
 }
 
 .price-rect {
 	position: absolute;
 	top: 5px;
 	right: 154px;
-}
-
-.filter-selection,
-.filter-selection-item {
-	display: flex;
-	margin: 0;
-	padding: 0;
 }
 
 .filter-selection {
@@ -1197,12 +1214,17 @@ input[type="number"]:focus {
 	list-style: none;
 	margin: 0;
 	padding: 0;
+	padding-left: 30px;
 }
 
 .filter-selection-item {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	user-select: none;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 17px;
+	margin-bottom: 25px;
 }
 
 .filter-selection-show {
