@@ -968,9 +968,11 @@ input[type="number"]:focus {
 /* footer */
 
 .page-footer {
-	background-color: var(--background-footer-color);
 	min-height: 120px;
 	max-width: 1200px;
+	margin: 0;
+	padding: 0;
+	background-color: var(--background-footer-color);
 }
 
 .page-footer .container-footer {
