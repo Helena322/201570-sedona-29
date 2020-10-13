@@ -615,6 +615,7 @@ nav img {
 
 .caption {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	align-self: center;
 	text-align: center;
@@ -1578,10 +1579,34 @@ input[type="number"]:focus {
 	padding: 0;
 }
 
-.botton-open {
+/* animation */
 
+@keyframes show {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+  	opacity: 0;
+  }
 }
 
 .modal-show {
+	animation: show 1s;
+	opacity: 1;
+}
 
+.modal-close {
+	animation: hide 1s;
+	opacity: 0;
 }
