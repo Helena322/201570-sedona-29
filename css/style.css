@@ -1152,6 +1152,10 @@ input[type="number"]:focus {
 	line-height: 21px;
 }
 
+.label-selection-checkbox {
+	cursor: pointer;
+}
+
 .filter-input-checkbox + label::before {
 	content: "";
 	position: absolute;
@@ -1529,12 +1533,10 @@ input[type="number"]:focus {
 	margin: 0;
 }
 
-.icon-up-dir:hover path,
 .icon-down-dir:hover path {
 	fill: var(--basic-black);
 }
 
-.icon-up-dir:active path,
 .icon-down-dir:active path {
 	fill: var(--basic-blue);
 }
@@ -1574,4 +1576,12 @@ input[type="number"]:focus {
 	align-items: center;
 	margin: 0;
 	padding: 0;
+}
+
+.botton-open {
+
+}
+
+.modal-show {
+
 }
