@@ -671,6 +671,7 @@ nav img {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
+	z-index: 50;
 }
 
 .search-heading {
@@ -1000,7 +1001,7 @@ input[type="number"]:focus {
 	width: 1200px;
 	margin: 0;
 	margin-top: -477px;
-	z-index: -20;
+	z-index: 0;
 }
 
 /* footer */
@@ -1011,6 +1012,7 @@ input[type="number"]:focus {
 	margin: 0;
 	padding: 0;
 	background-color: var(--background-footer-color);
+	z-index: 100;
 }
 
 .page-footer .container-footer {
@@ -1619,33 +1621,31 @@ input[type="number"]:focus {
 /* animation */
 
 @keyframes show {
-  0% {
-    opacity: 0;
-    height: 0;
-  }
+	0% {
+		opacity: 0;
+	}
 
-  100% {
-    opacity: 1;
-    height: 392px;
-  }
+	100% {
+		opacity: 1;
+	}
 }
 
 @keyframes hide {
-  0% {
-    opacity: 1;
-  }
+	0% {
+		opacity: 1;
+	}
 
-  100% {
-  	opacity: 0;
-  }
+	100% {
+		opacity: 0;
+	}
 }
 
 .modal-show {
-	animation: show 1s;
+	animation: show 1s forwards;
 	pointer-events: all;
 }
 
 .modal-close {
-	animation: hide 1s;
+	animation: hide 1s forwards;
 	pointer-events: none;
 }
