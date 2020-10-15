@@ -105,15 +105,27 @@ img {
 }
 
 .site-navigation {
-	/*display: flex;
-	width: 100%;*/
-	display: grid;
-	grid-template-columns: 264px 264px 264px 264px;
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
 	list-style: none;
 	margin: 0;
 	padding: 0;
 	padding-top: 15px;
 	padding-bottom: 15px;
+}
+
+.site-navigation-item {
+	display: flex;
+	width: 210px;
+}
+
+.site-navigation li:nth-child(2) {
+	margin-right: 82px;
+}
+
+.site-navigation li:nth-child(3) {
+	margin-left: 82px;
 }
 
 .site-navigation a {
@@ -1609,10 +1621,12 @@ input[type="number"]:focus {
 @keyframes show {
   0% {
     opacity: 0;
+    height: 0;
   }
 
   100% {
     opacity: 1;
+    height: 392px;
   }
 }
 
@@ -1628,13 +1642,10 @@ input[type="number"]:focus {
 
 .modal-show {
 	animation: show 1s;
-	opacity: 1;
-	visibility: visible;
+	pointer-events: all;
 }
 
 .modal-close {
 	animation: hide 1s;
-	opacity: 0;
-	visibility: hidden;
-	height: 0;
+	pointer-events: none;
 }
