@@ -635,7 +635,7 @@ nav img {
 	flex-direction: column;
 	align-self: center;
 	text-align: center;
-	min-height: 235px;
+	min-height: 150px;
 	margin: 0;
 	padding: 57px;
 	padding-bottom: 0;
@@ -663,7 +663,6 @@ nav img {
 	display: block;
 	position: relative;
 	width: 568px;
-	top: -85px;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
@@ -705,7 +704,9 @@ nav img {
 
 .layer {
 	display: flex;
+	position: absolute;
 	width: 568px;
+	top: 100%;
 	flex-direction: column;
 	align-items: center;
 	background-color: var(--basic-white);
@@ -996,17 +997,17 @@ input[type="number"]:focus {
 /* modal-map */
 
 .modal-map {
-	position: absolute;
 	height: 590px;
 	width: 1200px;
 	margin: 0;
-	margin-top: -477px;
+	margin-bottom: -110px;
 	z-index: 0;
 }
 
 /* footer */
 
 .page-footer {
+	position: relative;
 	min-height: 120px;
 	max-width: 1200px;
 	margin: 0;
@@ -1623,6 +1624,8 @@ input[type="number"]:focus {
 @keyframes show {
 	0% {
 		opacity: 0;
+		visibility: visible;
+		z-index: 1;
 	}
 
 	100% {
@@ -1637,6 +1640,8 @@ input[type="number"]:focus {
 
 	100% {
 		opacity: 0;
+		visibility: hidden;
+		z-index: -1;
 	}
 }
 
@@ -1649,3 +1654,4 @@ input[type="number"]:focus {
 	animation: hide 1s forwards;
 	pointer-events: none;
 }
+
