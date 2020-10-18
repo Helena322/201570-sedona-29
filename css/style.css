@@ -1520,8 +1520,6 @@ input[type="number"]:focus {
 	margin: 0;
 	padding: 0;
 	margin-left: 0;
-	/*display: grid;
-	grid-template-columns: 1fr 1fr 1fr;*/
 }
 
 .sort-type-item a {
@@ -1558,10 +1556,6 @@ input[type="number"]:focus {
 	align-items: center;
 	margin: 0;
 	margin-left: auto;
-	/*
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	justify-items: end;*/
 }
 
 .icon-up-dir {
@@ -1594,11 +1588,6 @@ input[type="number"]:focus {
 	align-items: flex-end;
 	margin: 0;
 	margin-left: auto;
-	/*
-	display: grid;
-	align-items: end;
-	margin-right: 50px;
-	justify-content: end;*/
 }
 
 .star {
