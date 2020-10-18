@@ -1572,7 +1572,7 @@ input[type="number"]:focus {
 	margin: 0;
 }
 
-.icon-down-dir path{
+.icon-down-dir path {
 	fill: var(--basic-blue);
 }
 
