@@ -29,6 +29,7 @@
 	--border: #E5E5E5;
 	--toggle: #ababab;
 	--box-shadow: #cfcfcf;
+	--placeholder: #EBEBEB;
 }
 
 
@@ -44,7 +45,7 @@ body {
 	font-weight: bold;
 	color: var(--basic-black);
 	text-transform: uppercase;
-	background-color: var(--basic-white);
+	background-color: var(--basic-light-gray);
 	background-position: top center;
 	background-repeat: no-repeat;
 	box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
@@ -71,6 +72,10 @@ body {
 img {
 	max-width: 100%;
 	height: auto;
+}
+
+.main-container {
+	background-color: var(--basic-white);
 }
 
 /* Main navigation */
@@ -241,6 +246,7 @@ nav img {
 
 .features {
 	text-align: center;
+	background-color: var(--basic-white);
 	margin-bottom: 0;
 }
 
@@ -439,7 +445,7 @@ nav img {
 
 .rating p {
 	color: var(--rating);
-	background-color: var(--basic-light-gray);
+	background-color: var(--basic-white);
 }
 
 .reservation {
@@ -501,6 +507,7 @@ nav img {
 .features-list-second {
 	padding-top: 45px;
 	padding-bottom: 35px;
+	background-color: var(--basic-gray);
 }
 
 .rectangle-third h3{
@@ -563,6 +570,7 @@ nav img {
 	flex-direction: column;
 	align-self: center;
 	text-align: center;
+	background-color: var(--basic-white);
 	min-height: 150px;
 	margin: 0;
 	padding: 57px;
@@ -649,7 +657,7 @@ nav img {
 	justify-content: center;
 	align-items: center;
 	margin: 0;
-	padding: 52px 30px;
+	padding: 55px 30px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -676,6 +684,7 @@ nav img {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
+	margin-bottom: 2px;
 }
 
 .appointment-form-first p,
@@ -704,7 +713,7 @@ nav img {
 }
 
 .appointment-form-first p {
-	margin-bottom: 28px;
+	margin-bottom: 26px;
 }
 
 .label-text {
@@ -747,6 +756,21 @@ nav img {
 	text-align: center;
 	border: none;
 	background-color: var(--basic-light-gray);
+}
+
+.leaving input:hover,
+.arrival input:hover,
+.adults input:hover,
+.children input:hover {
+	background-color: var(--placeholder);
+}
+
+.leaving input:focus,
+.arrival input:focus,
+.adults input:focus,
+.children input:focus {
+	background-color: var(--basic-white);
+	border: 2px solid var(--border);
 }
 
 /*Safari, Chrome, Opera*/
@@ -850,8 +874,10 @@ input[type="number"]:focus {
 	position: absolute;
 	height: 30px;
 	width: 30px;
+	top: 3px;
 	right: 65px;
-	top: 4px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
 	z-index: 20;
 }
 
@@ -862,20 +888,23 @@ input[type="number"]:focus {
 	width: 30px;
 	padding: 5px;
 	border: none;
-	top: 3px;
-	right: -15px;
+	top: 7px;
+	right: -11px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
 }
 
 .minus-adults {
 	position: absolute;
-	right: 75px;
+	top: 3px;
+	right: 74px;
 	z-index: 20;
 }
 
 .plus-adults {
 	position: absolute;
-	top: 3px;
-	right: -7px;
+	top: 7px;
+	right: -2px;
 	z-index: 20;
 }
 
@@ -895,16 +924,20 @@ input[type="number"]:focus {
 .arrival-input-button {
 	display: block;
 	position: absolute;
-	top: 9px;
-	right: 8px;
+	top: 7px;
+	right: 2px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
 	z-index: 100;
 }
 
 .leaving-input-button {
 	display: block;
 	position: absolute;
-	top: 8px;
-	right: 8px;
+	top: 7px;
+	right: 2px;
+	background: rgba(0, 0, 0, 0);
+	border: none;
 	z-index: 100;
 }
 
@@ -921,6 +954,8 @@ input[type="number"]:focus {
 .plus:active path {
 	fill: var(--basic-blue);
 }
+
+
 
 /* modal-map */
 
