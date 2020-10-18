@@ -1503,15 +1503,6 @@ input[type="number"]:focus {
 	line-height: 26px;
 }
 
-/*.sort-type {
-	
-	display: grid;
-	grid-template-columns: 1fr auto;
-	align-items: center;
-	margin-left: 35px;
-	justify-self: start;
-}*/
-
 .sort-list-item {
 	display: flex;
 	align-items: center;
