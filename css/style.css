@@ -1572,6 +1572,10 @@ input[type="number"]:focus {
 	margin: 0;
 }
 
+.icon-down-dir path{
+	fill: var(--basic-blue);
+}
+
 .icon-down-dir:hover path,
 .icon-up-dir:hover path {
 	fill: var(--basic-black);
