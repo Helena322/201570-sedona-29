@@ -771,6 +771,7 @@ nav img {
 .children input:focus {
 	background-color: var(--basic-white);
 	border: 2px solid var(--border);
+	outline: none;
 }
 
 /*Safari, Chrome, Opera*/
