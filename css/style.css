@@ -1104,8 +1104,8 @@ input[type="number"]:focus {
 }
 
 .button-copyright:hover,
-.button-copyright:focus {
-	color: var(--basic-blue);
+.button-copyright:focus path {
+	fill: var(--basic-blue);
 }
 
 .button-copyright:active {
@@ -1515,7 +1515,9 @@ input[type="number"]:focus {
 }
 
 .icon-down-dir:hover path,
-.icon-up-dir:hover path {
+.icon-down-dir:focus path,
+.icon-up-dir:hover path,
+.icon-up-dir:focus path {
 	fill: var(--basic-black);
 }
 
