@@ -130,13 +130,15 @@ img {
 	color: var(--basic-black);
 }
 
-.site-navigation a:hover {
+.site-navigation a:hover,
+.site-navigation a:focus {
 	color: var(--basic-blue);
 }
 
-.site-navigation a:focus {
+.site-navigation a:active {
 	color: var(--basic-black);
 	opacity: 0.3;
+	outline: none;
 }
 
 .current-page a {
@@ -381,7 +383,8 @@ nav img {
 	color: var(--basic-dark);
 }
 
-.hotel a:hover {
+.hotel a:hover,
+.hotel a:focus {
 	color: var(--basic-blue);
 }
 
@@ -481,8 +484,10 @@ nav img {
 	text-transform: uppercase;
 }
 
-.search-results-button-detail:hover {
+.search-results-button-detail:hover,
+.search-results-button-detail:focus {
 	background-color: var(--button-hover);
+	outline: none;
 }
 
 .search-results-button-detail:active {
@@ -490,8 +495,10 @@ nav img {
 	background-color: var(--button-active);
 }
 
-.search-results-button-stay:hover {
+.search-results-button-stay:hover,
+.search-results-button-stay:focus {
 	background-color: var(--search-hover);
+	outline: none;
 }
 
 .search-results-button-stay:active {
@@ -629,7 +636,8 @@ nav img {
 	text-transform: uppercase;
 }
 
-.search-heading-button:hover {
+.search-heading-button:hover,
+.search-heading-button:focus {
 	color: var(--basic-white);
 	background-color: var(--search-hover);
 }
@@ -1062,7 +1070,8 @@ input[type="number"]:focus {
 	background-color: var(--basic-blue);
 }
 
-.social-button:hover {
+.social-button:hover,
+.social-button:focus {
 	background-color: var(--button-hover);
 }
 
@@ -1094,7 +1103,8 @@ input[type="number"]:focus {
 	line-height: 26px;
 }
 
-.button-copyright:hover {
+.button-copyright:hover,
+.button-copyright:focus {
 	color: var(--basic-blue);
 }
 
@@ -1465,7 +1475,8 @@ input[type="number"]:focus {
 	line-height: 18px;
 }
 
-.sort-type-item a:hover {
+.sort-type-item a:hover,
+.sort-type-item a:focus {
 	color: var(--basic-blue);
 }
 
