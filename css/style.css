@@ -30,6 +30,7 @@
 	--toggle: #ababab;
 	--box-shadow: #cfcfcf;
 	--placeholder: #EBEBEB;
+	--hidden: rgba(0, 0, 0, 0);
 }
 
 
@@ -684,7 +685,6 @@ nav img {
 	flex-wrap: wrap;
 	margin: 0;
 	padding: 0;
-	margin-bottom: 2px;
 }
 
 .appointment-form-first p,
@@ -713,7 +713,7 @@ nav img {
 }
 
 .appointment-form-first p {
-	margin-bottom: 26px;
+	margin-bottom: 28px;
 }
 
 .label-text {
@@ -731,11 +731,11 @@ nav img {
 .appointment-item-first input {
 	position: relative;
 	background-color: var(--basic-light-gray);
-	height: 38px;
+	height: 33px;
 	width: 330px;
 	padding-left: 13px;
 	margin: 0;
-	border: none;
+	border: 2px solid var(--hidden);
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -745,8 +745,8 @@ nav img {
 
 .adults input,
 .children input {
-	width: 115px;
-	height: 38px;
+	width: 112px;
+	height: 33px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 14px;
@@ -754,7 +754,7 @@ nav img {
 	text-transform: uppercase;
 	margin: 0;
 	text-align: center;
-	border: none;
+	border: 2px solid var(--hidden);
 	background-color: var(--basic-light-gray);
 }
 
@@ -864,7 +864,7 @@ input[type="number"]:focus {
 }
 
 .children input {
-	width: 110px;
+	width: 105px;
 	position: relative;
 	right: -13px;
 }
@@ -875,7 +875,7 @@ input[type="number"]:focus {
 	height: 30px;
 	width: 30px;
 	top: 3px;
-	right: 65px;
+	right: 66px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	z-index: 20;
@@ -888,8 +888,8 @@ input[type="number"]:focus {
 	width: 30px;
 	padding: 5px;
 	border: none;
-	top: 7px;
-	right: -11px;
+	top: 6px;
+	right: -9px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 }
@@ -903,7 +903,7 @@ input[type="number"]:focus {
 
 .plus-adults {
 	position: absolute;
-	top: 7px;
+	top: 6px;
 	right: -2px;
 	z-index: 20;
 }
@@ -914,7 +914,7 @@ input[type="number"]:focus {
 
 .children .label-text {
 	margin: 0;
-	margin-right: 12px;
+	margin-right: 15px;
 }
 
 .arrival {
@@ -925,7 +925,7 @@ input[type="number"]:focus {
 	display: block;
 	position: absolute;
 	top: 7px;
-	right: 2px;
+	right: 4px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	z-index: 100;
@@ -935,7 +935,7 @@ input[type="number"]:focus {
 	display: block;
 	position: absolute;
 	top: 7px;
-	right: 2px;
+	right: 4px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	z-index: 100;
