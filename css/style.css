@@ -1175,7 +1175,7 @@ input[type="number"]:focus {
 	height: 23px;
 	width: 23px;
 	border: none;
-	background: url("../img/shape.png") no-repeat;
+	background: url("../img/shape.svg") no-repeat;
 }
 
 .filter-input-checkbox:checked + label::after {
@@ -1185,7 +1185,7 @@ input[type="number"]:focus {
 	width: 23px;
 	top: 3px;
 	left: -25px;
-	background: url("../img/check_mark.png") no-repeat;
+	background: url("../img/check_mark.svg") no-repeat;
 }
 
 .filter-input-checkbox:active + label::before {
@@ -1194,11 +1194,11 @@ input[type="number"]:focus {
 
 .filter-input-checkbox:active + label::after {
 	border-color: var(--checkbox-active);
-	background: url("../img/check_mark_dark.png") no-repeat;
+	background: url("../img/check_mark_dark.svg") no-repeat;
 }
 
 .filter-input-checkbox:checked:active + label::before {
-	background: url("../img/shape_dark.png") no-repeat;
+	background: url("../img/shape_dark.svg") no-repeat;
 }
 
 .checkbox-text {
