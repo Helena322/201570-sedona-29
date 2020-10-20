@@ -1387,7 +1387,7 @@ input[type="number"]:focus {
 	line-height: 21px;
 	font-weight: bold;
 	text-transform: inherit;
-	outline: none;
+	outline: 2px solid var(basic-gray);
 }
 
 .filter-show:hover {
@@ -1397,7 +1397,7 @@ input[type="number"]:focus {
 }
 
 .filter-show:focus {
-	outline-color: var(basic-gray);
+	outline-color: 2px solid var(basic-gray);
 }
 
 .sort {
