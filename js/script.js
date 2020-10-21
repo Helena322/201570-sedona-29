@@ -38,9 +38,26 @@ button.addEventListener("click", function (evt) {
 form.addEventListener("submit", function (evt) {
 	if (!arrival.value || !leaving.value || !adults.value || !children.value) {
 		evt.preventDefault();
-		form.classList.remove("modal-error");
+		if (!arrival.value) {
+		arrival.classList.remove("modal-error");
 		form.offsetWidth = form.offsetWidth;
-		form.classList.add("modal-error");
+		arrival.classList.add("modal-error");
+		}
+		if (!leaving.value) {
+		leaving.classList.remove("modal-error");
+		form.offsetWidth = form.offsetWidth;
+		leaving.classList.add("modal-error");
+		}
+		if (!adults.value) {
+		adults.classList.remove("modal-error");
+		form.offsetWidth = form.offsetWidth;
+		adults.classList.add("modal-error");
+		}
+		if (!children.value) {
+		children.classList.remove("modal-error");
+		form.offsetWidth = form.offsetWidth;
+		children.classList.add("modal-error");
+		}
 	} else {
 		localStorage.setItem("adults", adults.value);
 		localStorage.setItem("children", children.value);
