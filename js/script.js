@@ -8,19 +8,19 @@ let adults = form.querySelector('.adults-input');
 let children = form.querySelector('.children-input');
 
 let isStorageSupport = true;
-let storageAdults = "";
-let storageChildren = "";
+let storageAdults = '';
+let storageChildren = '';
 
 try {
-	storageAdults = localStorage.getItem("adults");
-	storageChildren = localStorage.getItem("children");
+	storageAdults = localStorage.getItem('adults');
+	storageChildren = localStorage.getItem('children');
 } 	catch (err) {
 	isStorageSupport = false;
 }
 
-button.addEventListener("click", function (evt) {
+button.addEventListener('click', function (evt) {
 	evt.preventDefault();
-	if (layer.classList.contains("modal-close")) {
+	if (layer.classList.contains('modal-close')) {
 		layer.classList.remove('modal-close');
 		layer.classList.add('modal-show');
 		arrival.focus();
@@ -28,36 +28,31 @@ button.addEventListener("click", function (evt) {
 		layer.classList.remove('modal-show');
 		layer.classList.add('modal-close');
 	}
-	
+
 	if (storageAdults) {
 		adults.value = storageAdults;
 		children.value = storageChildren;
 	}
 });
 
-form.addEventListener("submit", function (evt) {
+form.addEventListener('submit', function (evt) {
 	if (!arrival.value || !leaving.value || !adults.value || !children.value) {
 		evt.preventDefault();
-		form.classList.remove("modal-error");
+		form.classList.remove('modal-error');
 		form.offsetWidth = form.offsetWidth;
-		form.classList.add("modal-error");
+		form.classList.add('modal-error');
 	} else {
-		localStorage.setItem("adults", adults.value);
-		localStorage.setItem("children", children.value);
+		localStorage.setItem('adults', adults.value);
+		localStorage.setItem('children', children.value);
 	}
 });
 
-window.addEventListener("keydown", function (evt) {
+window.addEventListener('keydown', function (evt) {
   if (evt.keyCode === 27) {
-    if (layer.classList.contains("modal-show")) {
+    if (layer.classList.contains('modal-show')) {
       evt.preventDefault();
-      layer.classList.remove("modal-show");
+      layer.classList.remove('modal-show');
       layer.classList.add('modal-close');
     }
   }
 });
-
-/*button.onclick = function() {
-	layer.classList.toggle('modal-close');
-	layer.classList.toggle('modal-show');
-}*/
