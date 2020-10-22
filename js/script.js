@@ -28,8 +28,8 @@ button.addEventListener("click", function (evt) {
 		layer.classList.remove('modal-show');
 		layer.classList.add('modal-close');
 	}
-
-	if (storage) {
+	
+	if (storageAdults) {
 		adults.value = storageAdults;
 		children.value = storageChildren;
 	}
