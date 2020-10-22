@@ -8,12 +8,12 @@ let adults = form.querySelector('.adults-input');
 let children = form.querySelector('.children-input');
 
 let isStorageSupport = true;
-let storage = "";
-let storage2 = "";
+let storageAdults = "";
+let storageChildren = "";
 
 try {
-	storage = localStorage.getItem("adults");
-	storage2 = localStorage.getItem("children");
+	storageAdults = localStorage.getItem("adults");
+	storageChildren = localStorage.getItem("children");
 } 	catch (err) {
 	isStorageSupport = false;
 }
@@ -30,34 +30,17 @@ button.addEventListener("click", function (evt) {
 	}
 
 	if (storage) {
-		adults.value = storage;
-		children.value = storage2;
+		adults.value = storageAdults;
+		children.value = storageChildren;
 	}
 });
 
 form.addEventListener("submit", function (evt) {
 	if (!arrival.value || !leaving.value || !adults.value || !children.value) {
 		evt.preventDefault();
-		if (!arrival.value) {
-		arrival.classList.remove("modal-error");
+		form.classList.remove("modal-error");
 		form.offsetWidth = form.offsetWidth;
-		arrival.classList.add("modal-error");
-		}
-		if (!leaving.value) {
-		leaving.classList.remove("modal-error");
-		form.offsetWidth = form.offsetWidth;
-		leaving.classList.add("modal-error");
-		}
-		if (!adults.value) {
-		adults.classList.remove("modal-error");
-		form.offsetWidth = form.offsetWidth;
-		adults.classList.add("modal-error");
-		}
-		if (!children.value) {
-		children.classList.remove("modal-error");
-		form.offsetWidth = form.offsetWidth;
-		children.classList.add("modal-error");
-		}
+		form.classList.add("modal-error");
 	} else {
 		localStorage.setItem("adults", adults.value);
 		localStorage.setItem("children", children.value);
