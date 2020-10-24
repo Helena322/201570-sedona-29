@@ -5,13 +5,13 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body class="page-body inner-page">
   
     <header class="main-header">
-      <a class="home-page" href="index.html"><img src="img/logo.svg" width="138" height="70" alt="City of Seedona"></a>
+      <a class="home-page" href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Seedona"></a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li class="site-navigation-item"><a href="#">Информация</a></li>
@@ -35,13 +35,13 @@
               <h2>Инфраструктура:</h2>
               <ul class="filter-selection">
                 <li class="filter-selection-item">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="pool" id="pool" value="бассейн" checked><label class="label-selection-checkbox" for="pool" aria-label="Фильтр бассейн"><span class="checkbox-text">бассейн</span></label>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="pool" id="pool" checked><label class="label-selection-checkbox" for="pool" aria-label="Фильтр бассейн"><span class="checkbox-text">бассейн</span></label>
                 </li>
                 <li class="filter-selection-item">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="parking" value="парковка"><label class="label-selection-checkbox" for="parking" aria-label="Фильтр парковка"><span class="checkbox-text">парковка</span></label>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="parking" id="parking"><label class="label-selection-checkbox" for="parking" aria-label="Фильтр парковка"><span class="checkbox-text">парковка</span></label>
                 </li>
                 <li class="filter-selection-item">
-                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi" value="wi-fi"><label class="label-selection-checkbox" for="wi-fi" aria-label="Фильтр wi-fi"><span class="checkbox-text">wi-fi</span></label>
+                  <input class="filter-input-checkbox visually-hidden" type="checkbox" name="wi-fi" id="wi-fi"><label class="label-selection-checkbox" for="wi-fi" aria-label="Фильтр wi-fi"><span class="checkbox-text">wi-fi</span></label>
                 </li>
               </ul>
             </div>
@@ -49,13 +49,13 @@
             <h2>Тип жилья:</h2>
             <ul class="filter-selection filter-selection-second">
               <li class="filter-selection-item">
-                <input class="filter-input-checkbox filter-input-checkbox-second visually-hidden" type="checkbox" name="hotel" id="hotel" value="гостиница" checked><label class="label-selection-checkbox" for="hotel" aria-label="Фильтр гостиница"><span class="checkbox-text">гостиница</span></label>
+                <input class="filter-input-checkbox filter-input-checkbox-second visually-hidden" type="checkbox" name="hotel" id="hotel" checked><label class="label-selection-checkbox" for="hotel" aria-label="Фильтр гостиница"><span class="checkbox-text">гостиница</span></label>
               </li>
               <li class="filter-selection-item">
-                <input class="filter-input-checkbox filter-input-checkbox-second visually-hidden" type="checkbox" name="motel" id="motel" value="мотель" checked><label class="label-selection-checkbox" for="motel" aria-label="Фильтр мотель"><span class="checkbox-text">мотель</span></label>
+                <input class="filter-input-checkbox filter-input-checkbox-second visually-hidden" type="checkbox" name="motel" id="motel" checked><label class="label-selection-checkbox" for="motel" aria-label="Фильтр мотель"><span class="checkbox-text">мотель</span></label>
               </li>
               <li class="filter-selection-item">
-                <input class="filter-input-checkbox filter-input-checkbox-second visually-hidden" type="checkbox" name="apartments" id="apartments" value="апартаменты" checked><label class="label-selection-checkbox" for="apartments" aria-label="Фильтр апартаменты"><span class="checkbox-text">апартаменты</span></label>
+                <input class="filter-input-checkbox filter-input-checkbox-second visually-hidden" type="checkbox" name="apartments" id="apartments" checked><label class="label-selection-checkbox" for="apartments" aria-label="Фильтр апартаменты"><span class="checkbox-text">апартаменты</span></label>
               </li>
             </ul>
           </div>
@@ -77,10 +77,10 @@
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
-                      <div class="bar" style="width: 80%"></div>
+                      <div class="bar"></div>
                     </div>
-                    <div class="toggle toggle-min" tabindex="0" style="left: 0"></div>
-                    <div class="toggle toggle-max" tabindex="0" style="left: 80%"></div>
+                    <div class="toggle toggle-min" tabindex="0"></div>
+                    <div class="toggle toggle-max" tabindex="0"></div>
                   </div>
                   <div class="filter-show-box">
                     <input type="submit" class="filter-show" value="показать" aria-label="Показать результат фильтра">
