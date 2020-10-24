@@ -199,6 +199,7 @@ img {
 .feature-item-social,
 .footer-copyright p {
 	display: inline-block;
+	vertical-align: baseline;
 	margin: 0;
 	padding: 0;
 	padding-left: 3px;
@@ -262,6 +263,7 @@ nav img {
 .logo {
 	position: relative;
 	background-image: url("../img/background_photo.jpg");
+	background-color: var(--basic-blue);
 	height: 509px;
 	width: 1200px;
 	z-index: 0;
@@ -269,14 +271,15 @@ nav img {
 
 .logo::after {
 	position: absolute;
-	content: url("../img/steps.png");
+	content: url("../img/steps.svg");
 	background-repeat: no-repeat;
-	bottom: -8px;
+	bottom: -223px;
 }
 
 .filter {
 	background-image: url("../img/background.png");
 	background-repeat: no-repeat;
+	background-color: var(--basic-gray);
 	margin: 0;
 	padding: 0;
 	padding-left: 72px;
@@ -797,7 +800,7 @@ nav img {
 
 .section-heading,
 .visually-hidden {
-	position: relative;
+	position: absolute;
 	height: 1px;
 	width: 1px;
 	margin: -1px;
@@ -1030,7 +1033,7 @@ input[type="number"]:focus {
 	position: absolute;
 	height: 30px;
 	width: 30px;
-	top: 3px;
+	top: 5px;
 	right: 66px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
@@ -1044,23 +1047,23 @@ input[type="number"]:focus {
 	width: 30px;
 	padding: 5px;
 	border: none;
-	top: 6px;
-	right: -9px;
+	top: 4px;
+	right: -15px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 }
 
 .minus-adults {
 	position: absolute;
-	top: 3px;
-	right: 74px;
+	top: 5px;
+	right: 73px;
 	z-index: 20;
 }
 
 .plus-adults {
 	position: absolute;
-	top: 6px;
-	right: -2px;
+	top: 4px;
+	right: -8px;
 	z-index: 20;
 }
 
@@ -1081,7 +1084,7 @@ input[type="number"]:focus {
 	display: block;
 	position: absolute;
 	top: 7px;
-	right: 4px;
+	right: 10px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	z-index: 100;
@@ -1091,7 +1094,7 @@ input[type="number"]:focus {
 	display: block;
 	position: absolute;
 	top: 7px;
-	right: 4px;
+	right: 10px;
 	background: rgba(0, 0, 0, 0);
 	border: none;
 	z-index: 100;
@@ -1166,7 +1169,7 @@ input[type="number"]:focus {
 	        flex-direction: column;
 	margin: 0;
 	padding: 0;
-	padding-top: 20px;
+	padding-top: 15px;
 }
 
 .footer-contacts h3 {
@@ -1197,7 +1200,7 @@ input[type="number"]:focus {
 }
 
 .container-footer .footer-copyright {
-	padding-top: 35px;
+	padding-top: 33px;
 }
 
 /* footer-phone */
@@ -1253,16 +1256,8 @@ input[type="number"]:focus {
 	background-color: var(--button-active);
 }
 
-.social-button:active path{
+.social-button:active path {
 	opacity: 0.3;
-}
-
-.button-copyright:hover path{
-	fill: var(--basic-blue);
-}
-
-.button-copyright:active path{
-	fill: var(--logo-press);
 }
 
 /* footer-copyright */
@@ -1277,13 +1272,13 @@ input[type="number"]:focus {
 	line-height: 26px;
 }
 
-.button-copyright:hover,
+.button-copyright:hover path,
 .button-copyright:focus path {
 	fill: var(--basic-blue);
 }
 
-.button-copyright:active {
-	color: var(--logo-press);
+.button-copyright:active path{
+	fill: var(--logo-press);
 }
 
 /*filter-selection*/
@@ -1391,7 +1386,6 @@ input[type="number"]:focus {
 	outline: 2px solid var(--basic-gray);
 }
 
-
 .filter-input-checkbox:disabled + label::after {
 	border-color: var(--checkbox-active);
 	background: url("../img/check_mark_dark.svg") no-repeat;
@@ -1400,8 +1394,6 @@ input[type="number"]:focus {
 .filter-input-checkbox:disabled + label::before {
 	background: url("../img/shape_dark.svg") no-repeat;
 }
-
-
 
 .checkbox-text {
 	margin: 0;
@@ -1579,7 +1571,7 @@ input[type="number"]:focus {
 	padding: 0;
 }
 
-.filter-selection input {
+.filter-selection button {
 	margin: 0;
 }
 
@@ -1612,9 +1604,8 @@ input[type="number"]:focus {
 	border: 2px solid var(--basic-white);
 	font-size: 14px;
 	line-height: 21px;
-	font-weight: bold;
+	font-weight: normal;
 	text-transform: inherit;
-	outline: 2px solid var(basic-gray);
 }
 
 .filter-show:hover {
@@ -1649,6 +1640,10 @@ input[type="number"]:focus {
 	        align-items: center;
 	margin: 0;
 	margin-right: 50px;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 21px;
+	line-height: 26px;
 }
 
 .sort-type {
