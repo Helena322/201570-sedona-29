@@ -1387,7 +1387,6 @@ input[type="number"]:focus {
 }
 
 .filter-input-checkbox:disabled + label::after {
-	border-color: var(--checkbox-active);
 	background: url("../img/check_mark_dark.svg") no-repeat;
 }
 
