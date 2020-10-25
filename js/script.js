@@ -7,8 +7,6 @@ let leaving = form.querySelector('.leaving-input');
 let adults = form.querySelector('.adults-input');
 let children = form.querySelector('.children-input');
 
-
-
 let isStorageSupport = true;
 let storageAdults = '';
 let storageChildren = '';

@@ -716,19 +716,26 @@ nav img {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
+	overflow: hidden;
 	z-index: 50;
+}
+
+.search-hide {
+	z-index: 10;
 }
 
 .search-heading {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	position: relative;
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
 	-webkit-box-align: center;
 	    -ms-flex-align: center;
 	        align-items: center;
+	z-index: 2;
 }
 
 .search-heading-button {
@@ -759,7 +766,6 @@ nav img {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
-	position: absolute;
 	width: 568px;
 	top: 100%;
 	-webkit-box-orient: vertical;
@@ -1119,11 +1125,13 @@ input[type="number"]:focus {
 /* modal-map */
 
 .modal-map {
+	position: relative;
 	height: 590px;
 	width: 1200px;
 	margin: 0;
+	margin-top: -395px;
 	margin-bottom: -110px;
-	z-index: 0;
+	z-index: 10;
 }
 
 /* footer */
@@ -1819,48 +1827,48 @@ input[type="number"]:focus {
 @-webkit-keyframes show {
 	0% {
 		opacity: 0;
-		visibility: visible;
-		z-index: 1;
+		transform: translateY(-100%);
 	}
 
 	100% {
 		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
 @keyframes show {
 	0% {
 		opacity: 0;
-		visibility: visible;
-		z-index: 1;
+		transform: translateY(-100%);
 	}
 
 	100% {
 		opacity: 1;
+		transform: translateY(0);
 	}
 }
 
 @-webkit-keyframes hide {
 	0% {
 		opacity: 1;
+		transform: translateY(0);
 	}
 
 	100% {
 		opacity: 0;
-		visibility: hidden;
-		z-index: -1;
+		transform: translateY(-100%);
 	}
 }
 
 @keyframes hide {
 	0% {
 		opacity: 1;
+		transform: translateY(0);
 	}
 
 	100% {
 		opacity: 0;
-		visibility: hidden;
-		z-index: -1;
+		transform: translateY(-100%);
 	}
 }
 
