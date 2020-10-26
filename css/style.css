@@ -716,7 +716,6 @@ nav img {
 	font-size: 21px;
 	line-height: 26px;
 	text-align: center;
-	overflow: hidden;
 	z-index: 50;
 }
 
@@ -763,6 +762,7 @@ nav img {
 }
 
 .layer {
+	position: absolute;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
@@ -1129,7 +1129,6 @@ input[type="number"]:focus {
 	height: 590px;
 	width: 1200px;
 	margin: 0;
-	margin-top: -395px;
 	margin-bottom: -110px;
 	z-index: 10;
 }
@@ -1360,7 +1359,6 @@ input[type="number"]:focus {
 	height: 19px;
 	width: 19px;
 	top: 2px;
-	left: -29px;
 	border-radius: 4px;
 	border: 2px solid var(--basic-white);
 }
@@ -1400,6 +1398,8 @@ input[type="number"]:focus {
 
 .filter-input-checkbox:disabled + label::before {
 	background: url("../img/shape_dark.svg") no-repeat;
+	border: none;
+	background-size: contain;
 }
 
 .checkbox-text {

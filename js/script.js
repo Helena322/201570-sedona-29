@@ -7,14 +7,14 @@ let leaving = form.querySelector('.leaving-input');
 let adults = form.querySelector('.adults-input');
 let children = form.querySelector('.children-input');
 
+document.addEventListener('DOMContentLoaded', function () {
+		layer.classList.remove('modal-show');
+		layer.classList.add('modal-close');
+});
+
 let isStorageSupport = true;
 let storageAdults = '';
 let storageChildren = '';
-
-document.addEventListener('DOMContentLoaded', function () {
-		layer.classList.remove('modal-close');
-		layer.classList.add('modal-show');
-});
 
 try {
 	storageAdults = localStorage.getItem('adults');
@@ -28,7 +28,7 @@ button.addEventListener('click', function (evt) {
 	if (layer.classList.contains('modal-close')) {
 		layer.classList.remove('modal-close');
 		layer.classList.add('modal-show');
-		arrival.focus();
+		arrival.focus({preventScroll:true});
 	} else {
 		layer.classList.remove('modal-show');
 		layer.classList.add('modal-close');
