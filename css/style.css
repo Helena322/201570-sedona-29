@@ -1359,6 +1359,7 @@ input[type="number"]:focus {
 	height: 19px;
 	width: 19px;
 	top: 2px;
+	left: -28px;
 	border-radius: 4px;
 	border: 2px solid var(--basic-white);
 }
@@ -1392,14 +1393,17 @@ input[type="number"]:focus {
 	outline: 2px solid var(--basic-gray);
 }
 
-.filter-input-checkbox:disabled + label::after {
-	background: url("../img/check_mark_dark.svg") no-repeat;
-}
-
 .filter-input-checkbox:disabled + label::before {
+	height: 23px;
+	width: 23px;
 	background: url("../img/shape_dark.svg") no-repeat;
 	border: none;
+	box-sizing: border-box;
 	background-size: contain;
+}
+
+.filter-input-checkbox:disabled + label::after {
+	background: url("../img/check_mark_dark.svg") no-repeat;
 }
 
 .checkbox-text {
