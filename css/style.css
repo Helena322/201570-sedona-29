@@ -39,6 +39,10 @@
 	--placeholder: #EBEBEB;
 	--hidden: rgba(0, 0, 0, 0);
 	--error-border: #FF0000;
+	--translucent: rgba(255, 255, 255, 0.3);
+	--body-shadow: rgba(0, 1, 1, 0.2);
+	--hotel-active: rgba(0, 0, 0, 0.3);
+	--layer-color: rgba(0, 1, 1, 0.15);
 }
 
 
@@ -57,8 +61,8 @@ body {
 	background-color: var(--basic-light-gray);
 	background-position: top center;
 	background-repeat: no-repeat;
-	-webkit-box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
-	        box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
+	-webkit-box-shadow: 0px 5px 15px var(--body-shadow);
+	        box-shadow: 0px 5px 15px var(--body-shadow);
 }
 
 .page-body {
@@ -174,7 +178,7 @@ img {
 	margin: 0 auto;
 }
 
-.city-of-seedona,
+.city-of-sedona,
 .home-page img {
 	position: absolute;
 	margin-left: auto;
@@ -462,7 +466,7 @@ nav img {
 }
 
 .hotel a:active {
-	color: rgba(0, 0, 0, 0.3);
+	color: var(--hotel-active);
 }
 
 
@@ -574,7 +578,7 @@ nav img {
 }
 
 .search-results-button-detail:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--translucent);
 	background-color: var(--button-active);
 }
 
@@ -585,7 +589,7 @@ nav img {
 }
 
 .search-results-button-stay:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--translucent);
 	background-color: var(--search-active);
 }
 
@@ -757,7 +761,7 @@ nav img {
 }
 
 .search-heading-button:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--translucent);
 	background-color: var(--search-active);
 }
 
@@ -776,8 +780,8 @@ nav img {
 	    -ms-flex-align: center;
 	        align-items: center;
 	background-color: var(--basic-white);
-	-webkit-box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
-	        box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
+	-webkit-box-shadow: 0 7px 15px 0 var(--layer-color);
+	        box-shadow: 0 7px 15px 0 var(--layer-color);
 	margin: 0;
 	padding: 0;
 }
@@ -1018,7 +1022,7 @@ input[type="number"]:focus {
 }
 
 .button:active {
-	color: rgba(255, 255, 255, 0.3);
+	color: var(--translucent);
 	background-color: var(--button-active);
 }
 
@@ -1041,7 +1045,7 @@ input[type="number"]:focus {
 	width: 30px;
 	top: 5px;
 	right: 66px;
-	background: rgba(0, 0, 0, 0);
+	background: var(--hidden);
 	border: none;
 	z-index: 20;
 }
@@ -1055,7 +1059,7 @@ input[type="number"]:focus {
 	border: none;
 	top: 4px;
 	right: -15px;
-	background: rgba(0, 0, 0, 0);
+	background: var(--hidden);
 	border: none;
 }
 
@@ -1091,7 +1095,7 @@ input[type="number"]:focus {
 	position: absolute;
 	top: 7px;
 	right: 10px;
-	background: rgba(0, 0, 0, 0);
+	background: var(--hidden);
 	border: none;
 	z-index: 100;
 }
@@ -1101,7 +1105,7 @@ input[type="number"]:focus {
 	position: absolute;
 	top: 7px;
 	right: 10px;
-	background: rgba(0, 0, 0, 0);
+	background: var(--hidden);
 	border: none;
 	z-index: 100;
 }
@@ -1506,7 +1510,7 @@ input[type="number"]:focus {
 
 .scale {
 	height: 2px;
-	background: rgba(255, 255, 255, 0.3);
+	background: var(--translucent);
 }
 
 .range-controls .bar {
@@ -1528,6 +1532,14 @@ input[type="number"]:focus {
 	-webkit-box-shadow: 0 2px 1px 0 var(--box-shadow);
 	        box-shadow: 0 2px 1px 0 var(--box-shadow);
 	cursor: pointer;
+}
+
+.toggle-min {
+	left: 0;
+}
+
+.toggle-max {
+	left: 80%;
 }
 
 .toggle:hover {
@@ -1610,7 +1622,7 @@ input[type="number"]:focus {
 	    -ms-grid-row-align: center;
 	    align-self: center;
 	margin: 0;
-	background-color: rgba(0, 0, 0, 0);
+	background-color: var(--hidden);
 	border-radius: 2px;
 	border: 2px solid var(--basic-white);
 	font-size: 14px;
