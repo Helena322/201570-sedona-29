@@ -1534,14 +1534,6 @@ input[type="number"]:focus {
 	cursor: pointer;
 }
 
-.toggle-min {
-	left: 0;
-}
-
-.toggle-max {
-	left: 80%;
-}
-
 .toggle:hover {
 	-webkit-transform: scale(1.2);
 	    -ms-transform: scale(1.2);
@@ -1576,8 +1568,12 @@ input[type="number"]:focus {
 	background: transparent;
 }
 
+.range-controls .toggle-min {
+	left: 0;
+}
+
 .range-controls .toggle-max {
-	left: 253px;
+	left: 80%;
 }
 
 .filter-selection-show h2 {
